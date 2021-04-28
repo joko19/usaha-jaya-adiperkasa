@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Grid } from "@material-ui/core";
@@ -12,6 +12,7 @@ import kawatLasSquare from "./../img/kawat_las_square.png";
 import BatuPolesSquare from "./../img/batu_poles_square.png";
 import ArrowBackIosRoundedIcon from "@material-ui/icons/ArrowBackIosRounded";
 import ArrowForwardIosRoundedIcon from "@material-ui/icons/ArrowForwardIosRounded";
+import Carousel from "react-material-ui-carousel";
 
 function Home() {
   const product = [
@@ -25,7 +26,7 @@ function Home() {
     {
       name: "Kawat Las",
       desc:
-        "Produk- produk ROHA mencakup peralatan dan perlengkapan las. Produk ROHA adalah produk berkualitas dengan harga yang sangat terjangkau. <br/> Jajaran produk ROHA terus diperbarui dengan quality control yang tinggi, agar kinerja dan kualitas produk tetap terjaga dan mampu memberikan hasil yang maksimal.",
+        "Produk- produk ROHA mencakup peralatan dan perlengkapan las. Produk ROHA adalah produk berkualitas dengan harga yang sangat terjangkau. \n \n Jajaran produk ROHA terus diperbarui dengan quality control yang tinggi, agar kinerja dan kualitas produk tetap terjaga dan mampu memberikan hasil yang maksimal.",
       img: kawatLasSquare,
     },
     {
@@ -35,7 +36,7 @@ function Home() {
       img: BatuPolesSquare,
     },
   ];
-  const [myProduct, setMyproduct] = useState('')
+  const [myProduct, setMyproduct] = useState("");
   return (
     <div>
       {/* <Header /> */}
@@ -112,21 +113,38 @@ function Home() {
 
       {/* product */}
       <p className="product">Produk Kami</p>
-      <Grid container justify="center" style={{ padding: 20 }}>
-        <Grid item md={6} sm={12} xs={12} style={{ textAlign: "center" }}>
-          <img src={product[0].img} className="product-img" />
-        </Grid>
-        <Grid item md={6} sm={12} xs={12}>
-          <p className="product-title">{product[0].name}</p>
-          <p className="product-desc">{product[0].desc}</p>
-          <p className="cover-call">Lihat Detail</p>
-        </Grid>
-        <ArrowBackIosRoundedIcon />
-        <ArrowForwardIosRoundedIcon />
-      </Grid>
+      <Carousel>
+        {product.map((item, i) => (
+          <ItemProduct item={item}/>
+        ))}
+      </Carousel>
+      {/* // <div> */}
+
+      {/*  */}
+
+      {/* // </div> */}
+      {/* // )} */}
       {/* <Footer /> */}
     </div>
   );
+}
+
+function ItemProduct(props) {
+  return(
+  <Grid container justify="center" style={{ padding: 20 }}>
+    <Grid item md={6} sm={12} xs={12} style={{ textAlign: "center" }}>
+      <img src={props.item.img} className="product-img" />
+    </Grid>
+    <Grid item md={6} sm={12} xs={12}>
+      <p className="product-title">{props.item.name}</p>
+      <p className="product-desc">{props.item.desc}</p>
+      <p className="cover-call">Lihat Detail</p>
+    </Grid>
+    {/* <ArrowBackIosRoundedIcon />
+    <ArrowForwardIosRoundedIcon /> */}
+  </Grid>
+
+  )
 }
 
 export default Home;

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import { Grid } from "@material-ui/core";
+import { Grid, Paper, makeStyles, Card } from "@material-ui/core";
+import Rating from "@material-ui/lab/Rating";
+import ScrollMenu from "react-horizontal-scrolling-menu";
 import "./../style/Home.css";
 import batuGerinda from "./../img/batu_gerinda.png";
 import batuPoles from "./../img/batu_poles.png";
@@ -13,6 +15,12 @@ import BatuPolesSquare from "./../img/batu_poles_square.png";
 import ArrowBackIosRoundedIcon from "@material-ui/icons/ArrowBackIosRounded";
 import ArrowForwardIosRoundedIcon from "@material-ui/icons/ArrowForwardIosRounded";
 import Carousel from "react-material-ui-carousel";
+import icEmpat from "./../img/icEmpat.png";
+import icLaju from "./../img/icLaju.png";
+import icCentralindo from "./../img/icCentralindo.png";
+import icManyar from "./../img/icManyar.png";
+import icAgung from "./../img/icAgung.png";
+import icSurya from "./../img/icSurya.png";
 
 function Home() {
   const product = [
@@ -34,6 +42,44 @@ function Home() {
       desc:
         "Sebagai produsen terkemuka yang berasal dari Jerman, dalam hal memoles, Langsol telah menjadi produk unggulan untuk pengerjaan permukaan dengan kualitas tinggi seperti logam, coats, dan plastik.  \n Produk ini menyediakan berbagai macam produk yang digunakan untuk memoles berbagai jenis bahan industri, mulai dari bahan stainless stell, alumunium, logam, logam non-ferrous, kayu clear coat hingga logam clear coat.",
       img: BatuPolesSquare,
+    },
+  ];
+  const client = [
+    {
+      name: "CV. Empat Jaya",
+      img: icEmpat,
+      desc:
+        "PT UJA adalah partner kami dalam memberikan suku cadang yang berkualitas dan terpercaya serta memberikan pelayanan yang terbaik kepada para konsumennya",
+    },
+    {
+      name: "CV. Laju Jaya Teknik",
+      img: icLaju,
+      desc:
+        "Produk konstruksi sangat berkualitas dan pelayanan yang memuaskan, belum pernah kecewa dengan produk PT UJA selama ini",
+    },
+    {
+      name: "PT. Centralindo Abadi Teknik ",
+      img: icCentralindo,
+      desc:
+        "Kami telah mempercayakan semua kebutuhan konstruksi kami kepada PT UJA sejak dulu karena kualitas yang masih tetap terjaga",
+    },
+    {
+      name: "CV. Manyar",
+      img: icManyar,
+      desc:
+        "PT UJA adalah partner kami dalam memberikan suku cadang yang berkualitas dan terpercaya serta memberikan pelayanan yang terbaik kepada para konsumennya",
+    },
+    {
+      name: "PT. Agung Nagasaki Teknik",
+      img: icAgung,
+      desc:
+        "Produk konstruksi sangat berkualitas dan pelayanan yang memuaskan, belum pernah kecewa dengan produk PT UJA selama ini",
+    },
+    {
+      name: "CV Surya Kencana Teknik",
+      img: icSurya,
+      desc:
+        "Kami telah mempercayakan semua kebutuhan konstruksi kami kepada PT UJA sejak dulu karena kualitas yang masih tetap terjaga",
     },
   ];
   const [myProduct, setMyproduct] = useState("");
@@ -115,36 +161,64 @@ function Home() {
       <p className="product">Produk Kami</p>
       <Carousel>
         {product.map((item, i) => (
-          <ItemProduct item={item}/>
+          <ItemProduct item={item} />
         ))}
       </Carousel>
-      {/* // <div> */}
+      <br />
+      {/* review client */}
+      <p className="product">Penilaian Klien</p>
+      <div className="itc">
+        {client.map((item) => (
+          // <Carousel>
+          <ItemClient data={item} />
+          // </Carousel>
+        ))}
+      </div>
 
-      {/*  */}
-
-      {/* // </div> */}
-      {/* // )} */}
       {/* <Footer /> */}
     </div>
   );
 }
 
 function ItemProduct(props) {
-  return(
-  <Grid container justify="center" style={{ padding: 20 }}>
-    <Grid item md={6} sm={12} xs={12} style={{ textAlign: "center" }}>
-      <img src={props.item.img} className="product-img" />
-    </Grid>
-    <Grid item md={6} sm={12} xs={12}>
-      <p className="product-title">{props.item.name}</p>
-      <p className="product-desc">{props.item.desc}</p>
-      <p className="cover-call">Lihat Detail</p>
-    </Grid>
-    {/* <ArrowBackIosRoundedIcon />
+  return (
+    <Grid container justify="center" style={{ padding: 20 }}>
+      <Grid item md={6} sm={12} xs={12} style={{ textAlign: "center" }}>
+        <img src={props.item.img} className="product-img" />
+      </Grid>
+      <Grid item md={6} sm={12} xs={12}>
+        <p className="product-title">{props.item.name}</p>
+        <p className="product-desc">{props.item.desc}</p>
+        <p className="cover-call">Lihat Detail</p>
+      </Grid>
+      {/* <ArrowBackIosRoundedIcon />
     <ArrowForwardIosRoundedIcon /> */}
-  </Grid>
-
-  )
+    </Grid>
+  );
 }
+
+function ItemClient(props) {
+  const classes = useStyles();
+  return (
+    <Card className={classes.root}>
+      <div className="itc-container">
+        <img src={props.data.img} style={{ width: 100 }} />
+        <p className="itc-title">{props.data.name}</p>
+        <Rating name="read-only" value={5} readOnly />
+        <p className="itc-desc">{props.data.desc}</p>
+      </div>
+    </Card>
+  );
+}
+
+const useStyles = makeStyles({
+  root: {
+    maxWidth: 419,
+    padding: 19,
+    backgroundColor: "#FBFBFB",
+    margin: 20,
+    display: "inline-block",
+  },
+});
 
 export default Home;

@@ -1,0 +1,17 @@
+.nav-link.active {
+  color: #ffc639;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.navbar .navbar-expand-lg .navbar {
+  padding-top: 1%;
+}
+
+.logowhite {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+}

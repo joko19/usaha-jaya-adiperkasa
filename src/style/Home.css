@@ -27,6 +27,11 @@
     border-radius: 15px;
     margin: 150x;
     width: 95%;
+    transition: .5s;
+}
+
+.cover-img:hover{
+    transform: scale(1.05);
 }
 
 .cover-call {
@@ -36,6 +41,7 @@
     display: inline;
     border-radius: 40px;
 }
+
 
 .vm-title {
     font-weight: bold;
@@ -105,7 +111,6 @@
     margin: 50;
     border-width: 10px;
 }
-
 
 .itc-title {
     font-size: 24px;

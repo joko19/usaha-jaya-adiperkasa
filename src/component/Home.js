@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Grid, Paper, makeStyles, Card } from "@material-ui/core";
+import { Fade } from "react-reveal";
 import Rating from "@material-ui/lab/Rating";
 import ScrollMenu from "react-horizontal-scrolling-menu";
 import "./../style/Home.css";
@@ -89,19 +90,22 @@ function Home() {
       <div className="cover">
         <Grid container justify="center">
           <Grid item md={7} sm={12} xs={12} style={{ paddingRight: 50 }}>
-            <p className="cover-title">
-              Dapatkan Berbagai Macam Produk{" "}
-              <p className="cover-quality">Berkualitas</p> Dari Para Pemasok
-              Mancanegara
-            </p>
-            <p className="cover-desc">
-              PT. Usaha Jaya Adiperkasa memiliki hubungan baik dengan para
-              pemasok alat teknik, konstruksi, industri manufaktur dan pabrik
-              dari mancanegara, seperti Jepang, Jerman, Inggris, Tiongkok,
-              Taiwan, Australia, Italia dan tidak menutup kemungkinan adanya
-              pemasok dari negara negara lain nantinya
-            </p>
-            <p className="cover-call">Hubungi Kami</p>
+            <Fade left>
+              {" "}
+              <p className="cover-title">
+                Dapatkan Berbagai Macam Produk{" "}
+                <p className="cover-quality">Berkualitas</p> Dari Para Pemasok
+                Mancanegara
+              </p>
+              <p className="cover-desc">
+                PT. Usaha Jaya Adiperkasa memiliki hubungan baik dengan para
+                pemasok alat teknik, konstruksi, industri manufaktur dan pabrik
+                dari mancanegara, seperti Jepang, Jerman, Inggris, Tiongkok,
+                Taiwan, Australia, Italia dan tidak menutup kemungkinan adanya
+                pemasok dari negara negara lain nantinya
+              </p>
+              <p className="cover-call">Hubungi Kami</p>
+            </Fade>
           </Grid>
           <Grid item md={2} sm={6} sx={12}>
             <img className="cover-img" src={batuPoles} />
@@ -117,43 +121,48 @@ function Home() {
       {/* visi misi */}
       <Grid container justify="center" spacing={15} style={{ padding: 25 }}>
         <Grid item md={6} sm={12} xs={12} style={{ paddingRight: 30 }}>
-          <p className="vm-title">Mengapa memilih kami ?</p>
-          <p className="vm-desc">
-            PT Usaha Jaya Adiperkasa (PT UJA) adalah salah satu perusahaan
-            import dan distribusi yang berpengalaman, ahli dalam hal pengadaan
-            alat, perangkat dan suku cadang untuk pabrik, konstruksi, Galangan
-            kapal dan industri manufaktur.
-          </p>
-          <p className="vm-desc">
-            PT UJA menyatukan aspirasi dan kebutuhan masyarakat Indonesia dengan
-            memasok berbagai macam produk berkualitas dan mendistribusikannya
-            secara luas di seluruh wilayah Indonesia serta tetap mengutamakan
-            dalam hal memberikan pelayanan serta menjaga hubungan kerjasama yang
-            baik di antara para rekan kerja, pelanggan & konsumen yang ada.
-          </p>
+          <Fade left>
+            <p className="vm-title">Mengapa memilih kami ?</p>
+            <p className="vm-desc">
+              PT Usaha Jaya Adiperkasa (PT UJA) adalah salah satu perusahaan
+              import dan distribusi yang berpengalaman, ahli dalam hal pengadaan
+              alat, perangkat dan suku cadang untuk pabrik, konstruksi, Galangan
+              kapal dan industri manufaktur.
+            </p>
+            <p className="vm-desc">
+              PT UJA menyatukan aspirasi dan kebutuhan masyarakat Indonesia
+              dengan memasok berbagai macam produk berkualitas dan
+              mendistribusikannya secara luas di seluruh wilayah Indonesia serta
+              tetap mengutamakan dalam hal memberikan pelayanan serta menjaga
+              hubungan kerjasama yang baik di antara para rekan kerja, pelanggan
+              & konsumen yang ada.
+            </p>
+          </Fade>
         </Grid>
         <Grid item md={6} sm={12} xs={12} style={{ padding: 25 }}>
-          <p className="vm-subtitle">Visi</p>
-          <p className="vm-content">
-            Menjadi sebuah perusahaan yang dapat dipercaya & diandalkan di
-            seluruh Indonesia, khususnya wilayah Indonesia Timur sebagai salah
-            satu penyedia berbagai macam alat-alat teknik yang berkualitas.
-          </p>
-          <h4 className="vm-subtitle">Misi</h4>
-          <ul>
-            <li className="vm-content">
-              Memberikan pelayanan semaksimal mungkin kepada seluruh dealer &
-              konsumen kami.
-            </li>
-            <li className="vm-content">
-              Memastikan semua produk yang kami sediakan memiliki kualitas yang
-              berstandart internasional & harga yang cukup bersaing.
-            </li>
-            <li className="vm-content">
-              Memberikan rasa aman & nyaman kepada semua dealer serta konsumen
-              kami terkait dengan merk & kualitas produk.
-            </li>
-          </ul>
+          <Fade bottom>
+            <p className="vm-subtitle">Visi</p>
+            <p className="vm-content">
+              Menjadi sebuah perusahaan yang dapat dipercaya & diandalkan di
+              seluruh Indonesia, khususnya wilayah Indonesia Timur sebagai salah
+              satu penyedia berbagai macam alat-alat teknik yang berkualitas.
+            </p>
+            <h4 className="vm-subtitle">Misi</h4>
+            <ul>
+              <li className="vm-content">
+                Memberikan pelayanan semaksimal mungkin kepada seluruh dealer &
+                konsumen kami.
+              </li>
+              <li className="vm-content">
+                Memastikan semua produk yang kami sediakan memiliki kualitas
+                yang berstandart internasional & harga yang cukup bersaing.
+              </li>
+              <li className="vm-content">
+                Memberikan rasa aman & nyaman kepada semua dealer serta konsumen
+                kami terkait dengan merk & kualitas produk.
+              </li>
+            </ul>
+          </Fade>
         </Grid>
       </Grid>
 

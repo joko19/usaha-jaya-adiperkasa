@@ -1,0 +1,90 @@
+.cover {
+    background-image: url('./../img/background.png');
+    padding: 30px;
+    background-size: cover;
+}
+
+.cover-title {
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+}
+
+.cover-quality {
+    color: yellow;
+    display: inline;
+}
+
+.cover-desc {
+    color: white;
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 50px;
+}
+
+.cover-img {
+    padding: 5px;
+    border-radius: 15px;
+    margin: 150x;
+    width: 95%;
+}
+
+.cover-call {
+    color:#2E3E5C;
+    background-color: #FFC639;
+    padding: 20px;
+    display: inline;
+    border-radius: 40px;
+}
+
+.vm-title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 84px;
+    letter-spacing: 0.5px;
+    color: #22284C;
+}
+
+.vm-desc {
+    font-size: 24px;
+    line-height: 140%;
+    color: #5B5B5B;
+}
+
+.vm-subtitle {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #22284C;
+    top: 972px;
+    margin-top: 70px;
+}
+
+.vm-content {
+    color: #5B5B5B;
+    font-size: 24px;
+    line-height: 160%;
+}
+
+.product {
+    font-size: 50px;
+    font-weight: 500;
+    color: #22284C;
+    text-align: center;
+}
+
+.product-img{
+    width: 80%;
+    text-align: center;
+}
+
+.product-title{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.product-desc{
+    color: #5B5B5B;
+    font-size: 24px;
+    line-height: 140%;
+}

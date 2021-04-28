@@ -1,13 +1,130 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import { Grid } from "@material-ui/core";
+import "./../style/Home.css";
+import batuGerinda from "./../img/batu_gerinda.png";
+import batuPoles from "./../img/batu_poles.png";
+import borDuduk from "./../img/bor_duduk.png";
+import pakingMesin from "./../img/paking_mesin.png";
+import pakingMesinSquare from "./../img/paking_mesin_square.png";
+import kawatLasSquare from "./../img/kawat_las_square.png";
+import BatuPolesSquare from "./../img/batu_poles_square.png";
+import ArrowBackIosRoundedIcon from "@material-ui/icons/ArrowBackIosRounded";
+import ArrowForwardIosRoundedIcon from "@material-ui/icons/ArrowForwardIosRounded";
 
 function Home() {
+  const product = [
+    {
+      name: "Paking Mesin",
+      desc:
+        "Paking Gasket TBA adalah sebuah bahan kertas yang terbuat dari kertas khusus gasket tipe cair (Liquid Gasket), oksirne silicone yang bermutu tinggi. Fungsi dari paking gasket TBA adalah untuk mengontrol kebocoran, bukan untuk mencegah seluruh kebocoran ",
+      img: pakingMesinSquare,
+    },
+
+    {
+      name: "Kawat Las",
+      desc:
+        "Produk- produk ROHA mencakup peralatan dan perlengkapan las. Produk ROHA adalah produk berkualitas dengan harga yang sangat terjangkau. <br/> Jajaran produk ROHA terus diperbarui dengan quality control yang tinggi, agar kinerja dan kualitas produk tetap terjaga dan mampu memberikan hasil yang maksimal.",
+      img: kawatLasSquare,
+    },
+    {
+      name: "Batu Poles",
+      desc:
+        "Sebagai produsen terkemuka yang berasal dari Jerman, dalam hal memoles, Langsol telah menjadi produk unggulan untuk pengerjaan permukaan dengan kualitas tinggi seperti logam, coats, dan plastik.  \n Produk ini menyediakan berbagai macam produk yang digunakan untuk memoles berbagai jenis bahan industri, mulai dari bahan stainless stell, alumunium, logam, logam non-ferrous, kayu clear coat hingga logam clear coat.",
+      img: BatuPolesSquare,
+    },
+  ];
+  const [myProduct, setMyproduct] = useState('')
   return (
     <div>
-      <Header />
-      hello world hello world hello world hello world hello world
-      <Footer />
+      {/* <Header /> */}
+      <div className="cover">
+        <Grid container justify="center">
+          <Grid item md={7} sm={12} xs={12} style={{ paddingRight: 50 }}>
+            <p className="cover-title">
+              Dapatkan Berbagai Macam Produk{" "}
+              <p className="cover-quality">Berkualitas</p> Dari Para Pemasok
+              Mancanegara
+            </p>
+            <p className="cover-desc">
+              PT. Usaha Jaya Adiperkasa memiliki hubungan baik dengan para
+              pemasok alat teknik, konstruksi, industri manufaktur dan pabrik
+              dari mancanegara, seperti Jepang, Jerman, Inggris, Tiongkok,
+              Taiwan, Australia, Italia dan tidak menutup kemungkinan adanya
+              pemasok dari negara negara lain nantinya
+            </p>
+            <p className="cover-call">Hubungi Kami</p>
+          </Grid>
+          <Grid item md={2} sm={6} sx={12}>
+            <img className="cover-img" src={batuPoles} />
+            <img className="cover-img" src={batuGerinda} />
+          </Grid>
+          <Grid item md={2} sm={6} sx={12}>
+            <img className="cover-img" src={borDuduk} />
+            <img className="cover-img" src={pakingMesin} />
+          </Grid>
+        </Grid>
+      </div>
+
+      {/* visi misi */}
+      <Grid container justify="center" spacing={15} style={{ padding: 25 }}>
+        <Grid item md={6} sm={12} xs={12} style={{ paddingRight: 30 }}>
+          <p className="vm-title">Mengapa memilih kami ?</p>
+          <p className="vm-desc">
+            PT Usaha Jaya Adiperkasa (PT UJA) adalah salah satu perusahaan
+            import dan distribusi yang berpengalaman, ahli dalam hal pengadaan
+            alat, perangkat dan suku cadang untuk pabrik, konstruksi, Galangan
+            kapal dan industri manufaktur.
+          </p>
+          <p className="vm-desc">
+            PT UJA menyatukan aspirasi dan kebutuhan masyarakat Indonesia dengan
+            memasok berbagai macam produk berkualitas dan mendistribusikannya
+            secara luas di seluruh wilayah Indonesia serta tetap mengutamakan
+            dalam hal memberikan pelayanan serta menjaga hubungan kerjasama yang
+            baik di antara para rekan kerja, pelanggan & konsumen yang ada.
+          </p>
+        </Grid>
+        <Grid item md={6} sm={12} xs={12} style={{ padding: 25 }}>
+          <p className="vm-subtitle">Visi</p>
+          <p className="vm-content">
+            Menjadi sebuah perusahaan yang dapat dipercaya & diandalkan di
+            seluruh Indonesia, khususnya wilayah Indonesia Timur sebagai salah
+            satu penyedia berbagai macam alat-alat teknik yang berkualitas.
+          </p>
+          <h4 className="vm-subtitle">Misi</h4>
+          <ul>
+            <li className="vm-content">
+              Memberikan pelayanan semaksimal mungkin kepada seluruh dealer &
+              konsumen kami.
+            </li>
+            <li className="vm-content">
+              Memastikan semua produk yang kami sediakan memiliki kualitas yang
+              berstandart internasional & harga yang cukup bersaing.
+            </li>
+            <li className="vm-content">
+              Memberikan rasa aman & nyaman kepada semua dealer serta konsumen
+              kami terkait dengan merk & kualitas produk.
+            </li>
+          </ul>
+        </Grid>
+      </Grid>
+
+      {/* product */}
+      <p className="product">Produk Kami</p>
+      <Grid container justify="center" style={{ padding: 20 }}>
+        <Grid item md={6} sm={12} xs={12} style={{ textAlign: "center" }}>
+          <img src={product[0].img} className="product-img" />
+        </Grid>
+        <Grid item md={6} sm={12} xs={12}>
+          <p className="product-title">{product[0].name}</p>
+          <p className="product-desc">{product[0].desc}</p>
+          <p className="cover-call">Lihat Detail</p>
+        </Grid>
+        <ArrowBackIosRoundedIcon />
+        <ArrowForwardIosRoundedIcon />
+      </Grid>
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -39,7 +39,7 @@ function Home() {
   const [myProduct, setMyproduct] = useState("");
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <div className="cover">
         <Grid container justify="center">
           <Grid item md={7} sm={12} xs={12} style={{ paddingRight: 50 }}>

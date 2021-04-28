@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "./Header";
-import Footer from "./Footer";
-import { Grid, Paper, makeStyles, Card } from "@material-ui/core";
+// import Footer from "./Footer";
+import { Grid, makeStyles, Card } from "@material-ui/core";
 import { Fade } from "react-reveal";
 import Rating from "@material-ui/lab/Rating";
-import ScrollMenu from "react-horizontal-scrolling-menu";
 import "./../style/Home.css";
 import batuGerinda from "./../img/batu_gerinda.png";
 import batuPoles from "./../img/batu_poles.png";
@@ -13,8 +12,6 @@ import pakingMesin from "./../img/paking_mesin.png";
 import pakingMesinSquare from "./../img/paking_mesin_square.png";
 import kawatLasSquare from "./../img/kawat_las_square.png";
 import BatuPolesSquare from "./../img/batu_poles_square.png";
-import ArrowBackIosRoundedIcon from "@material-ui/icons/ArrowBackIosRounded";
-import ArrowForwardIosRoundedIcon from "@material-ui/icons/ArrowForwardIosRounded";
 import Carousel from "react-material-ui-carousel";
 import icEmpat from "./../img/icEmpat.png";
 import icLaju from "./../img/icLaju.png";
@@ -83,7 +80,6 @@ function Home() {
         "Kami telah mempercayakan semua kebutuhan konstruksi kami kepada PT UJA sejak dulu karena kualitas yang masih tetap terjaga",
     },
   ];
-  const [myProduct, setMyproduct] = useState("");
   return (
     <div>
       <Header />
@@ -108,12 +104,12 @@ function Home() {
             </Fade>
           </Grid>
           <Grid item md={2} sm={6} sx={12}>
-            <img className="cover-img" src={batuPoles} />
-            <img className="cover-img" src={batuGerinda} />
+            <img className="cover-img" src={batuPoles} alt="batu poles" />
+            <img className="cover-img" src={batuGerinda} alt="batu gerinda" />
           </Grid>
           <Grid item md={2} sm={6} sx={12}>
-            <img className="cover-img" src={borDuduk} />
-            <img className="cover-img" src={pakingMesin} />
+            <img className="cover-img" src={borDuduk} alt="bor duduk" />
+            <img className="cover-img" src={pakingMesin} alt="paking mesin" />
           </Grid>
         </Grid>
       </div>
@@ -193,7 +189,7 @@ function ItemProduct(props) {
   return (
     <Grid container justify="center" style={{ padding: 20 }}>
       <Grid item md={6} sm={12} xs={12} style={{ textAlign: "center" }}>
-        <img src={props.item.img} className="product-img" />
+        <img src={props.item.img} className="product-img" alt="produk"/>
       </Grid>
       <Grid item md={6} sm={12} xs={12}>
         <p className="product-title">{props.item.name}</p>
@@ -211,7 +207,7 @@ function ItemClient(props) {
   return (
     <Card className={classes.root}>
       <div className="itc-container">
-        <img src={props.data.img} style={{ width: 100 }} />
+        <img src={props.data.img} style={{ width: 100 }} alt="client" />
         <p className="itc-title">{props.data.name}</p>
         <Rating name="read-only" value={5} readOnly />
         <p className="itc-desc">{props.data.desc}</p>

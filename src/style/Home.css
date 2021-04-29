@@ -11,7 +11,7 @@
 }
 
 .cover-quality {
-    color: yellow;
+    color: #FFC639;
     display: inline;
 }
 
@@ -30,7 +30,7 @@
     transition: .5s;
 }
 
-.cover-img:hover{
+.cover-img:hover {
     transform: scale(1.05);
 }
 
@@ -40,6 +40,7 @@
     padding: 20px;
     display: inline;
     border-radius: 40px;
+
 }
 
 
@@ -79,6 +80,22 @@
     text-align: center;
 }
 
+.product-active {
+    border-radius: 50%;
+    background-color: #22284C;
+    padding: 2px;
+    color: gainsboro;
+    cursor: pointer
+}
+
+.product-inactive {
+
+    border-radius: 50%;
+    background-color: gainsboro;
+    padding: 2px;
+    color: #22284C
+}
+
 .product-img {
     width: 80%;
     text-align: center;
@@ -93,12 +110,22 @@
     color: #5B5B5B;
     font-size: 24px;
     line-height: 140%;
+    margin-bottom: 30px;
+}
+
+.product-detail {
+    color: #2E3E5C;
+    background-color: #FFC639;
+    padding: 20px;
+    display: inline;
+    border-radius: 40px;
 }
 
 .itc {
     overflow-x: hidden;
     overflow: auto;
     white-space: nowrap;
+
 
 }
 

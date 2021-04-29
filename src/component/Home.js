@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 // import Footer from "./Footer";
-import { Grid, makeStyles, Card } from "@material-ui/core";
+import { Grid, makeStyles, Card, Slide } from "@material-ui/core";
+import ArrowForwardIosRoundedIcon from "@material-ui/icons/ArrowForwardIosRounded";
+import ArrowBackIosRoundedIcon from "@material-ui/icons/ArrowBackIosRounded";
 import { Fade } from "react-reveal";
 import Rating from "@material-ui/lab/Rating";
+import Slider from "react-animated-slider";
 import "./../style/Home.css";
 import batuGerinda from "./../img/batu_gerinda.png";
 import batuPoles from "./../img/batu_poles.png";
@@ -21,6 +24,8 @@ import icAgung from "./../img/icAgung.png";
 import icSurya from "./../img/icSurya.png";
 
 function Home() {
+  const [slideCount, setSlideCount] = useState(0);
+
   const product = [
     {
       name: "Paking Mesin",
@@ -42,6 +47,20 @@ function Home() {
       img: BatuPolesSquare,
     },
   ];
+
+  const nextProduct = () => {
+    if (slideCount !== product.length - 1) {
+      setSlideCount(slideCount + 1);
+    }
+    console.log(slideCount);
+  };
+  const previousProduct = () => {
+    if (slideCount !== 0) {
+      setSlideCount(slideCount - 1);
+    }
+    console.log(slideCount);
+  };
+
   const client = [
     {
       name: "CV. Empat Jaya",
@@ -164,21 +183,51 @@ function Home() {
 
       {/* product */}
       <p className="product">Produk Kami</p>
-      <Carousel>
-        {product.map((item, i) => (
-          <ItemProduct item={item} />
-        ))}
-      </Carousel>
+      {/* <Slide direction="left"> */}
+
+      {/* {product.map((item, i) => ( */}
+      <Fade left>
+        <ItemProduct item={product[slideCount]} />
+      </Fade>
+      {/* // ))} */}
+      {/*  */}
+      {/* </Slide> */}
+      <center>
+        {slideCount === 0 ? (
+          <ArrowBackIosRoundedIcon
+            onClick={previousProduct}
+            className="product-inactive"
+          />
+        ) : (
+          <ArrowBackIosRoundedIcon
+            onClick={previousProduct}
+            className="product-active"
+          />
+        )}
+        {"   "}
+        {slideCount === product.length - 1 ? (
+          <ArrowForwardIosRoundedIcon
+            onClick={nextProduct}
+            className="product-inactive"
+          />
+        ) : (
+          <ArrowForwardIosRoundedIcon
+            onClick={nextProduct}
+            className="product-active"
+          />
+        )}
+      </center>
       <br />
+
       {/* review client */}
       <p className="product">Penilaian Klien</p>
-      <div className="itc">
-        {client.map((item) => (
-          // <Carousel>
-          <ItemClient data={item} />
-          // </Carousel>
-        ))}
-      </div>
+        <div className="itc">
+          {client.map((item) => (
+            // <Carousel>
+            <ItemClient data={item} />
+            //  </Carousel>
+          ))}
+        </div>
 
       {/* <Footer /> */}
     </div>
@@ -189,15 +238,13 @@ function ItemProduct(props) {
   return (
     <Grid container justify="center" style={{ padding: 20 }}>
       <Grid item md={6} sm={12} xs={12} style={{ textAlign: "center" }}>
-        <img src={props.item.img} className="product-img" alt="produk"/>
+        <img src={props.item.img} className="product-img" alt="produk" />
       </Grid>
       <Grid item md={6} sm={12} xs={12}>
         <p className="product-title">{props.item.name}</p>
         <p className="product-desc">{props.item.desc}</p>
-        <p className="cover-call">Lihat Detail</p>
+        <p className="product-detail">Lihat Detail</p>
       </Grid>
-      {/* <ArrowBackIosRoundedIcon />
-    <ArrowForwardIosRoundedIcon /> */}
     </Grid>
   );
 }
@@ -219,6 +266,7 @@ function ItemClient(props) {
 const useStyles = makeStyles({
   root: {
     maxWidth: 419,
+    height: 360,
     padding: 19,
     backgroundColor: "#FBFBFB",
     margin: 20,

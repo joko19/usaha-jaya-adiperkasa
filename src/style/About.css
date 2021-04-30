@@ -1,0 +1,77 @@
+.cover {
+    background-image: url('./../img/backgroundAbout.png');
+    padding: 75px;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* height: 204px; */
+    min-height: 100%;
+    background-position: center;
+}
+
+.cover-title {
+    color: 'white';
+    text-align: center;
+    /* background-color: gold; */
+}
+
+.desc-first {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.desc {
+    /* margin-top: 80px; */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.desc-bold {
+    font-weight: bold;
+}
+
+.photo {
+    width: 288px;
+    height: 288px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.photo-img{
+    overflow: hidden;
+}
+
+.photo-img:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: transform .5s ease;
+}
+
+.photo-name {
+    margin-top: -70px;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 15px;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+}
+
+.photo-position {
+    margin-top: -10px;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 15px;
+    /* opacity: 0; */
+}
+
+/* /* .photo-name:hover{
+    visibility: visible;
+} */
+
+.photo-position:hover {
+    opacity: 100%;
+    cursor: pointer;
+}

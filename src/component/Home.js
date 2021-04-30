@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 import { Grid, makeStyles, Card } from "@material-ui/core";
 import { Fade } from "react-reveal";
 import Rating from "@material-ui/lab/Rating";
@@ -180,7 +180,7 @@ function Home() {
         ))}
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

@@ -8,12 +8,23 @@ import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './header.css'
 
+function changeGlowingLogo(e){
+ 
+    e.target.src = "logo_uja_white_glow.svg";
+}
+function changeWhiteLogo(e){
+  e.target.src = "logo_uja putih 1.png";
+}
+
+
 function Header() {
   return (
     <div style={{ backgroundColor: "#22284C", color: "white" }}>
      <nav class="navbar navbar-expand-lg navbar " style={{backgroundColor: "#22284C", color: "white"}}>
   <div class="container-fluid">
-    <img class="logowhite" src="logo_uja putih 1.png"></img>
+    <img class="logowhite" src="logo_uja putih 1.png" width="100.56px" height="47.56px"
+      onMouseEnter={changeGlowingLogo}
+     onMouseLeave={changeWhiteLogo}></img>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

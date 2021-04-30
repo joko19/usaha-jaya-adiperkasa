@@ -1,0 +1,103 @@
+#container {
+  display: grid;
+  height: 100%;
+}
+
+.leftside {
+  float: left;
+  height: auto;
+}
+
+.menuside {
+  position: relative;
+}
+
+.logo-uja-footer {
+  position: relative;
+  margin-top: 110px;
+  margin-left: 149px;
+
+  /* left: 10.35%;
+  right: 82.43%;
+  top: 19.96%;
+  bottom: 67.15%; */
+}
+
+.nama-perusahaan {
+  position: relative;
+
+  margin-top: 30px;
+  margin-left: 67px;
+  margin-right: 107px;
+  margin-bottom: 200px;
+  /* margin-bottom: 312px; */
+  left: 4.65%;
+  /* top: 38.29%; */
+  /* bottom: 56.62%; */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  /* identical to box height, or 28px */
+
+  /* text-align: center; */
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.title-menu-footer {
+  margin-top: 115px;
+  margin-left: 50px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+
+.sub-menu-top {
+  margin-top: 115px;
+  margin-left: 50px;
+  padding-top: 1%;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #ffffff;
+}
+.sub-menu {
+  margin-top: 50px;
+  margin-left: 50px;
+  padding-top: 2%;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.li {
+  padding-top: 30px;
+}
+
+#data_contact_us {
+  margin-left: 33px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 160%;
+  /* identical to box height, or 32px */
+
+  color: #ffffff;
+}

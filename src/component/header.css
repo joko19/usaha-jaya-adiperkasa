@@ -1,5 +1,15 @@
 .nav-link.active {
   color: #ffc639;
+  border-collapse: collapse;
+  border-bottom: #ffc639 solid 3px;
+}
+
+.a.nav-link.active {
+  border-bottom-width: 3px #ffc639;
+}
+
+.nav-link:hover {
+  color: #ffc639;
 }
 
 .nav-link {
@@ -14,4 +24,8 @@
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 1%;
+}
+
+.logowhite:hover {
+  /* box-shadow: 10px 10px 100px greenyellow; */
 }

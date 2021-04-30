@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "./Header";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 import { Grid, makeStyles, Card, Slide } from "@material-ui/core";
 import ArrowForwardIosRoundedIcon from "@material-ui/icons/ArrowForwardIosRounded";
 import ArrowBackIosRoundedIcon from "@material-ui/icons/ArrowBackIosRounded";
@@ -229,7 +229,7 @@ function Home() {
           ))}
         </div>
 
-      <Footer />
+      <Footer/>
     </div>
   );
 }

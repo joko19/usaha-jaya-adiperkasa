@@ -31,10 +31,10 @@ function Header() {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tentang Kami</a>
+          <a class="nav-link" href="/about">Tentang Kami</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Produk Kami</a>
@@ -46,7 +46,7 @@ function Header() {
           <a class="nav-link" href="#">Berita</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="/blog">Blog</a>
         </li>
       </ul>
     </div>

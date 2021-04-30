@@ -12,6 +12,26 @@
   position: relative;
 }
 
+.link_menu {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.link_menu:hover {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #ffc639;
+}
+
 .logo-uja-footer {
   position: relative;
   margin-top: 110px;
@@ -62,9 +82,8 @@
 }
 
 .sub-menu-top {
-  margin-top: 115px;
+  margin-top: 28px;
   margin-left: 50px;
-  padding-top: 1%;
   text-decoration: none;
   font-family: Montserrat;
   font-style: normal;
@@ -74,9 +93,8 @@
   color: #ffffff;
 }
 .sub-menu {
-  margin-top: 50px;
-  margin-left: 50px;
-  padding-top: 2%;
+  margin-top: 32px;
+  padding-left: 50px;
   text-decoration: none;
   font-family: Montserrat;
   font-style: normal;
@@ -90,6 +108,10 @@
   padding-top: 30px;
 }
 
+#contact_us_list {
+  margin-top: 28px;
+}
+
 #data_contact_us {
   margin-left: 33px;
   font-family: Montserrat;
@@ -100,4 +122,12 @@
   /* identical to box height, or 32px */
 
   color: #ffffff;
+}
+
+#media_social {
+  margin-top: 40px;
+}
+
+#media_social_item {
+  margin-left: 28px;
 }

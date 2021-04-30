@@ -51,7 +51,7 @@ function Footer() {
   function mediaSocialList(){
     let list = [];
     imglogo.forEach(element =>{
-      list.push(<li class="list-inline-item" id="" ><img src={element}></img></li>)
+      list.push(<li class="list-inline-item" id="media_social_item" ><img src={element}></img></li>)
     });
     return list;
   }
@@ -76,7 +76,7 @@ function Footer() {
  function menuList() {
     let list = [];
     data_menu.forEach(element => {
-      list.push(<li><a href="#" class={element.classname}>{element.menu}</a></li>)
+      list.push(<li  class={element.classname}><a href="#" class="link_menu">{element.menu}</a></li>)
     });
     // for(i = 1; i<data_menu.length; i++){
     //   list.push(<li><a href="#" class={data_menu[i].classname}>{data_menu[i].menu}</a></li>)
@@ -111,7 +111,7 @@ function Footer() {
               </ul>
             </li>
             <li>
-              <ul class="list-unstyled-inline" >
+              <ul class="list-unstyled-inline" id="media_social" >
                 {mediaSocialList()}
               </ul>
             </li>

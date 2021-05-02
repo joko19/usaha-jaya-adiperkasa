@@ -33,17 +33,16 @@ function Footer() {
 
   ];
   const data_contact_us =[
-    {
-      img: "iconlocation.png",
-      data : "Jl.Kedinding Indah No.3-5, Sby"
-    },
+  
     {
       img: "iconemail.png",
-      data: "admin@ujadiperkasa.com"
+      data: "admin@ujadiperkasa.com",
+      id: "contact-us-list-top"
     },
     {
       img: "iconphone.png",
-      data: "(031) - 51500278"
+      data: "(031) - 51500278",
+      id : "contact-us-list"
     },
   
   ];
@@ -61,7 +60,7 @@ function Footer() {
     
     data_contact_us.forEach(element =>{
       
-      list.push(<ul class="list-unstyled-inline" id=""> <li class="list-inline-item">
+      list.push(<ul class="list-unstyled-inline" id={element.id}> <li class="list-inline-item">
       <img src={element.img}></img> 
       </li>
       <li class="list-inline-item" id="data_contact_us">
@@ -90,31 +89,44 @@ function Footer() {
         <img class="logo-uja-footer" src="logo_uja putih 1.png" width="104px" heigth="71px"></img>
         <p className="nama-perusahaan">PT Usaha Jaya Adiperkasa</p>
         </div>
-        <div class="col">
+        <div class="col-2">
           <ul class="list-unstyled">
              <li>
             <p className="title-menu-footer">Menu</p>
-          
             </li>
-
             {menuList()}
           </ul>
         </div>
-        <div class="col-5">
+        <div class="col-3">
           <ul class="list-unstyled">
             <li>
               <p className="title-menu-footer">Kontak Kami</p>
             </li>
             <li>
-              <ul class="list-unstyled-inline" id=""> 
+              <ul class="list-unstyled-inline" id="contact-us-list"> 
                 {contactusList()}
+               
               </ul>
             </li>
             <li>
               <ul class="list-unstyled-inline" id="media_social" >
                 {mediaSocialList()}
+                
               </ul>
             </li>
+           
+          </ul>
+        </div>
+        <div class="col-md-auto">
+          <ul class="list-unstyled">
+          <li>
+              <p className="title-menu-footer">Lokasi Kami</p>
+            </li>
+            <ul class="list-unstyled-inline" id="contact-us-item">
+            <li class="list-inline-item"><img src="iconlocation.png"></img></li>
+            <li class="list-inline-item" id="data_contact_us"><p>Jl.Kedinding Indah No.3-5, Sby</p></li>
+            </ul>
+            <li class="list-inline-item" ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d920.6013484287697!2d112.77586950700196!3d-7.227234008308983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9b2619aeb3f%3A0x240afc723e7c084c!2sJl.%20Kedinding%20Indah%20No.3-5%2C%20RT.003%2FRW.05%2C%20Tanah%20Kali%20Kedinding%2C%20Kec.%20Kenjeran%2C%20Kota%20SBY%2C%20Jawa%20Timur%2060129!5e0!3m2!1sen!2sid!4v1619936882241!5m2!1sen!2sid" width="300" height="200" style={{border:0}} allowfullscreen="" loading="lazy"></iframe></li>
           </ul>
         </div>
       </div>

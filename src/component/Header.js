@@ -6,7 +6,7 @@ import { FormControl } from "react-bootstrap";
 import { NavDropdown } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import './header.css'
+import "./../style/header.css";
 
 function changeGlowingLogo(e){
  

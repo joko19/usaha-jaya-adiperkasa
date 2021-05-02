@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap");
 #container {
   display: grid;
   height: 100%;
@@ -14,10 +17,10 @@
 
 .link_menu {
   text-decoration: none;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 100%;
   color: #ffffff;
 }
@@ -27,7 +30,7 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 100%;
   color: #ffc639;
 }
@@ -48,7 +51,7 @@
 
   margin-top: 30px;
   margin-left: 67px;
-  margin-right: 107px;
+  margin-right: 67px;
   margin-bottom: 200px;
   /* margin-bottom: 312px; */
   left: 4.65%;
@@ -58,7 +61,7 @@
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 140%;
   /* identical to box height, or 28px */
 
@@ -69,12 +72,11 @@
 
 .title-menu-footer {
   margin-top: 115px;
-  margin-left: 50px;
-
+  margin-left: 0px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 100%;
   letter-spacing: 0.04em;
 
@@ -83,7 +85,7 @@
 
 .sub-menu-top {
   margin-top: 28px;
-  margin-left: 50px;
+  margin-left: 0px;
   text-decoration: none;
   font-family: Montserrat;
   font-style: normal;
@@ -94,30 +96,61 @@
 }
 .sub-menu {
   margin-top: 32px;
-  padding-left: 50px;
+  padding-left: 0px;
   text-decoration: none;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 100%;
   color: #ffffff;
 }
 
+#contact-us-list {
+  margin-top: 16px;
+  padding-left: 0px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+#contact-us-list-top {
+  margin-top: 28px;
+  padding-left: 0px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+#contact-us-item {
+  margin-top: 20px;
+  padding-left: 0px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+}
 .li {
   padding-top: 30px;
 }
 
-#contact_us_list {
-  margin-top: 28px;
-}
-
 #data_contact_us {
-  margin-left: 33px;
+  margin-left: 0px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 160%;
   /* identical to box height, or 32px */
 
@@ -125,9 +158,14 @@
 }
 
 #media_social {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 #media_social_item {
-  margin-left: 28px;
+  margin-left: 0px;
+}
+
+.list-unstyled-inline {
+  padding-left: 0px;
+  text-decoration: none;
 }

@@ -1,0 +1,13 @@
+.cover{
+    background-image: url('./../img/backgroundBlog.png');
+    padding: 75px;
+    background-size: cover;
+    min-height: 100%;
+    background-position: center;
+}
+
+.cover-title {
+    color: 'white';
+    text-align: center;
+    /* background-color: gold; */
+}

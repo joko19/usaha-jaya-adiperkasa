@@ -25,6 +25,7 @@ import icSurya from "./../img/icSurya.png";
 
 function Home() {
   const [slideCount, setSlideCount] = useState(0);
+  
 
   const product = [
     {
@@ -101,7 +102,7 @@ function Home() {
   ];
   return (
     <div>
-      <Header />
+      <Header currentPage="Home" />
       <div className="cover">
         <Grid container justify="center">
           <Grid item md={7} sm={12} xs={12} style={{ paddingRight: 50 }}>

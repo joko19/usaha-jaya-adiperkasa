@@ -188,7 +188,7 @@ function About() {
   ];
   return (
     <div>
-      <Header />
+      <Header currentPage="Tentang Kami" />
       <div className="cover">
         <h1 className="cover-title">Tentang Kami</h1>
       </div>

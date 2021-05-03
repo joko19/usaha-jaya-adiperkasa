@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Navbar } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Form } from "react-bootstrap";
@@ -8,6 +8,33 @@ import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./../style/header.css";
 
+
+const navbarmenu = [
+  {
+    title: "Home",
+    href : "/"
+},
+{
+  title : "Tentang Kami",
+  href : "/about"
+},
+{
+  title: "Produk Kami",
+  href: "#"
+},
+{
+  title : "Authorized Dealer",
+  href :"#"
+},
+{
+  title : "Berita",
+  href : "#"
+},
+{
+  title : "Blog",
+  href : "/blog"
+}
+];
 function changeGlowingLogo(e){
  
     e.target.src = "logo_uja_white_glow.svg";
@@ -16,8 +43,29 @@ function changeWhiteLogo(e){
   e.target.src = "logo_uja putih 1.png";
 }
 
+function renderNavBar(currentPage){
+  let list = [];
+  navbarmenu.forEach(element => {
+    if(currentPage === element.title) {
+      list.push(<li class="nav-item">
+      <a class="nav-link active" aria-current="page" href={element.href}>{element.title}</a>
+    </li>);
+    } else {
+      list.push(<li class="nav-item">
+      <a class="nav-link" href={element.href}>{element.title}</a>
+    </li>);
+    }
+  //   list.push(<li class="nav-item">
+  //   <a class="nav-link" aria-current="page" href={element.href}>{element.title}</a>
+  // </li>);
+  });
+  return list;
+}
 
-function Header() {
+
+function Header(props) {
+  
+
   return (
     <div style={{ backgroundColor: "#22284C", color: "white" }}>
      <nav class="navbar navbar-expand-lg navbar " style={{backgroundColor: "#22284C", color: "white"}}>
@@ -30,24 +78,7 @@ function Header() {
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about">Tentang Kami</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Produk Kami</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Authorized Dealer</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Berita</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/blog">Blog</a>
-        </li>
+        {renderNavBar(props.currentPage)}
       </ul>
     </div>
   </div>

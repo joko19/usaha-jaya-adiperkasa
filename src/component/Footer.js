@@ -12,23 +12,28 @@ function Footer() {
 
     {
       classname: "sub-menu-top",
-      menu : "Tentang Kami"
+      menu : "Tentang Kami",
+      link : "/about"
     },
     {
       classname : "sub-menu",
-      menu : "Produk Kami"
+      menu : "Produk Kami",
+      link : ""
     },
     {
       classname : "sub-menu",
-      menu : "Authorized Dealers"
+      menu : "Authorized Dealers",
+      link : ""
     },
     {
       classname:  "sub-menu",
-      menu : "Berita"
+      menu : "Berita",
+      link : ""
     },
     {
       classname : "sub-menu",
-      menu: "Blog"
+      menu: "Blog",
+      link : "/blog"
     }
 
   ];
@@ -75,7 +80,7 @@ function Footer() {
  function menuList() {
     let list = [];
     data_menu.forEach(element => {
-      list.push(<li  class={element.classname}><a href="#" class="link_menu">{element.menu}</a></li>)
+      list.push(<li  class={element.classname}><a href={element.link} class="link_menu">{element.menu}</a></li>)
     });
     // for(i = 1; i<data_menu.length; i++){
     //   list.push(<li><a href="#" class={data_menu[i].classname}>{data_menu[i].menu}</a></li>)

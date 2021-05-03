@@ -30,14 +30,39 @@
     font-weight: bold;
 }
 
+.timeline{
+    width: 100%;
+}
+
+.timeline-title {
+    margin-left: 100px;
+    color: #22284C;
+}
+
+.timeline-year{
+    margin-top: -10px;
+    color: #FFC639;
+    margin-left: 100px;
+}
+
+.timeline-line{
+    color: #FFDD88;
+    padding: 90%;
+}
+
+
 .photo {
-    width: 288px;
-    height: 288px;
+    width: 260px;
+    height: 260px;
     display: inline-block;
     overflow: hidden;
 }
 
-.photo-img{
+.photo-title{
+    color: #22284C;
+}
+
+.photo-img {
     overflow: hidden;
 }
 
@@ -75,3 +100,9 @@
     opacity: 100%;
     cursor: pointer;
 }
+
+
+
+
+
+

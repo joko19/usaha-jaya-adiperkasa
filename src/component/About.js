@@ -1,4 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import HorizontalTimeline from "react-horizontal-timeline";
+
+import { makeStyles } from "@material-ui/core/styles";
+import Timeline from "@material-ui/lab/Timeline";
+import TimelineItem from "@material-ui/lab/TimelineItem";
+import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
+import TimelineConnector from "@material-ui/lab/TimelineConnector";
+import TimelineContent from "@material-ui/lab/TimelineContent";
+import TimelineDot from "@material-ui/lab/TimelineDot";
+
+import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
+import FastfoodIcon from "@material-ui/icons/Fastfood";
+import LaptopMacIcon from "@material-ui/icons/LaptopMac";
+import HotelIcon from "@material-ui/icons/Hotel";
+import RepeatIcon from "@material-ui/icons/Repeat";
+import Paper from "@material-ui/core/Paper";
+import Typography from "@material-ui/core/Typography";
+
 import Header from "./Header";
 import Footer from "./Footer";
 import "./../style/About.css";
@@ -34,6 +52,9 @@ import santoso from "./../img/photo/santoso.png";
 import ismuntoro from "./../img/photo/ismuntoro.png";
 
 function About() {
+  const classes = useStyles();
+  const [value, setValue] = useState("");
+  const [previous, setPrevious] = useState("");
   const team = [
     {
       img: lusia,
@@ -186,6 +207,22 @@ function About() {
       position: "Driver",
     },
   ];
+
+  const timeline = [
+    {
+      year: "1979",
+      desc: "Tahun pertama Usaha Jaya mulai dibangun",
+    },
+    {
+      year: "1989",
+      desc: "Tahun dimana Usaha Jaya semakin membesarkan perusahaan",
+    },
+    {
+      year: "2017",
+      desc:
+        "Tahun dimana Usaha Jaya merubah nama dari UD. Usaha Jaya menjadi PT Usaha Jaya Adi Perkasa",
+    },
+  ];
   return (
     <div>
       <Header currentPage="Tentang Kami" />
@@ -202,13 +239,73 @@ function About() {
         wilayah Indonesia Timur.
       </p>
 
+      <div className="timeline">
+        <h2 className="timeline-title">
+          Telah melayani dan dipercaya selama
+        </h2>
+        <h2 className="timeline-year"> 40 tahun</h2>
+        <Timeline align="alternate">
+          {timeline.map((item) => (
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot color="primary" />
+                <TimelineConnector className={classes.secondaryTail} />
+              </TimelineSeparator>
+              <TimelineContent>
+                <Paper elevation={3} className={classes.paper}>
+                  <Typography
+                    variant="h6"
+                    component="h1"
+                    style={{
+                      color: "#FFC639",
+                      fontWeight: "bold",
+                      fontSize: 48,
+                    }}
+                  >
+                    {item.year}
+                  </Typography>
+                  <Typography style={{ fontSize: 20 }}>{item.desc}</Typography>
+                </Paper>
+              </TimelineContent>
+            </TimelineItem>
+          ))}
+
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot color="primary">{/* <RepeatIcon /> */}</TimelineDot>
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper
+                elevation={3}
+                className={classes.paper}
+                style={{ backgroundColor: "#383E5E" }}
+              >
+                <Typography
+                  variant="h6"
+                  component="h1"
+                  style={{ color: "#FFDD88", fontSize: 48, fontWeight: 'bold' }}
+                >
+                  2019
+                </Typography>
+                <Typography 
+                  style={{ color: "#FFF", fontSize: 20 }}>
+                  PT Usaha Jaya Adi Perkasa akan terus berinovasi untuk
+                  mengikuti digital era saat ini
+                </Typography>
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+        </Timeline>
+      </div>
+
       <p className="desc">
         PT UJA menyatukan aspirasi dan kebutuhan masyarakat Indonesia dengan
         memasok berbagai macam produk berkualitas dan mendistribusikannya secara
         luas di seluruh wilayah Indonesia serta tetap mengutamakan dalam hal
         memberikan pelayanan serta menjaga hubungan kerjasama yang baik di
-        antara para rekan kerja, pelanggan & konsumen yang ada.{" "}
+        antara para rekan kerja, pelanggan & konsumen yang ada.
       </p>
+
       <p className="desc">
         Dengan adanya kualitas produk yang dapat diandalkan dan terjaga, PT UJA
         berharap dapat terus membangun dan menjaga hubungan baik dengan para
@@ -217,6 +314,7 @@ function About() {
         dari negara-negara lain nantinya.
       </p>
       <center>
+        <h2>Kami Siap Melayani Kebutuhan Bisnis Anda</h2>
         {team.map((item) => {
           return <Photo item={item} />;
         })}
@@ -237,3 +335,13 @@ const Photo = (props) => {
 };
 
 export default About;
+
+const useStyles = makeStyles((theme) => ({
+  paper: {
+    padding: "6px 16px",
+    // maxWidth: 360
+  },
+  secondaryTail: {
+    backgroundColor: "#FFDD88",
+  },
+}));

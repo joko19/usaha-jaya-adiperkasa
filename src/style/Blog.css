@@ -1,13 +1,102 @@
-.cover{
-    background-image: url('./../img/backgroundBlog.png');
-    padding: 75px;
-    background-size: cover;
-    min-height: 100%;
-    background-position: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap");
+.cover {
+  background-image: url("./../img/backgroundBlog.png");
+  padding: 75px;
+  background-size: cover;
+  min-height: 100%;
+  background-position: center;
 }
 
 .cover-title {
-    color: 'white';
-    text-align: center;
-    /* background-color: gold; */
+  color: "white";
+  text-align: center;
+  /* background-color: gold; */
+}
+
+.type-first {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  /* identical to box height, or 34px */
+
+  letter-spacing: 0.005em;
+
+  /* Black / 3 */
+
+  color: #8e8e8e;
+}
+
+.title-first {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 140%;
+  /* or 56px */
+
+  letter-spacing: 0.005em;
+
+  /* Blue / 1 */
+
+  color: #22284c;
+}
+.overview-first {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 160%;
+  /* or 32px */
+
+  letter-spacing: 0.005em;
+
+  /* Black / 2 */
+
+  color: #5b5b5b;
+}
+.type {
+  padding-top: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  /* identical to box height, or 34px */
+
+  letter-spacing: 0.005em;
+
+  /* Black / 3 */
+
+  color: #8e8e8e;
+}
+.title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  /* or 39px */
+
+  letter-spacing: 0.005em;
+
+  /* Blue / 1 */
+
+  color: #22284c;
+}
+.overview {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 28px */
+
+  letter-spacing: 0.005em;
+
+  /* Black / 2 */
+
+  color: #5b5b5b;
 }

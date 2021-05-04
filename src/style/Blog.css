@@ -3,7 +3,9 @@
 .cover {
   background-image: url("./../img/backgroundBlog.png");
   padding: 75px;
+  /* background-repeat: no-repeat; */
   background-size: cover;
+  /* height: 204px; */
   min-height: 100%;
   background-position: center;
 }

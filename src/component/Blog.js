@@ -13,6 +13,7 @@ import img8 from "./../img/blog/Rectangle21750.png"
 import img9 from "./../img/blog/Rectangle21751.png"
 import img10 from "./../img/blog/Rectangle21752.png"
 import { makeStyles } from "@material-ui/core";
+import {isMobile} from 'react-device-detect';
 
 
 function Blog() {
@@ -86,12 +87,26 @@ function Blog() {
   function printBlog(){
     let row = [];
     let index = 0;
+    if(isMobile){
+        for(let i = 0; i<blogItem.length; i++){
+          let item = blogItem[i];
+          row.push(<div class="row" style={{paddingTop: 100}}>
+          <div class="col" >
+          <img src={item.img} class="img-responsive" width="250"></img>
+          <p class="type" >{item.type}</p>
+          <p class="title" >{item.title}</p>
+          <p class="overview">{item.overview}</p>
+          </div>
+          </div>
+          );
+        }
+    } else {
     for(let i = 0; i<blogItem.length/3; i++){
       let col = [];
       for (let j = 0; j<3; j++){
         let item = blogItem[index]
-        col.push(<div class="col-4" >
-        <img src={item.img} width="350"></img>
+        col.push(<div class="col-4 .col-sm-8" >
+        <img src={item.img} class="img-responsive" width="350"></img>
         <p class="type" >{item.type}</p>
         <p class="title" >{item.title}</p>
         <p class="overview">{item.overview}</p>
@@ -103,9 +118,10 @@ function Blog() {
       } else{
         row.push( <div class="row" style={{paddingTop: 100}}>{col}</div>)
       }
-      
     }
+  }
     return row;
+  
   }
 
 
@@ -119,7 +135,7 @@ function Blog() {
     <div class="container">
       <div className="row">
         <div class="col" style={{ paddingTop: 82}}>
-          <img src={constructionimg}></img>
+          {isMobile ? (<img src={constructionimg} class="img-responsive" width="250"  ></img>) :  (<img src={constructionimg} class="img-responsive" ></img>)}
         </div>
         <div class="col" style={{paddingTop: 82}}>
         <p class="type-first" >Layanan</p>

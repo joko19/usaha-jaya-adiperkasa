@@ -46,6 +46,17 @@
   bottom: 67.15%; */
 }
 
+.logo-uja-footer-mobile {
+  position: relative;
+  margin-top: 110px;
+  margin-left: 100px;
+
+  /* left: 10.35%;
+  right: 82.43%;
+  top: 19.96%;
+  bottom: 67.15%; */
+}
+
 .nama-perusahaan {
   position: relative;
 
@@ -69,7 +80,28 @@
   letter-spacing: 0.5px;
   color: #ffffff;
 }
+.nama-perusahaan-mobile {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  /* margin-bottom: 312px; */
+  
+  /* top: 38.29%; */
+  /* bottom: 56.62%; */
 
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* identical to box height, or 28px */
+
+  /* text-align: center; */
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
 .title-menu-footer {
   margin-top: 115px;
   margin-left: 0px;
@@ -168,4 +200,10 @@
 .list-unstyled-inline {
   padding-left: 0px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .collapse {
+    display: block;
+  }
 }

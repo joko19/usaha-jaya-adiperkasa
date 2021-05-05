@@ -3,9 +3,11 @@
 .cover {
   background-image: url("./../img/backgroundBlog.png");
   padding: 75px;
+  margin-top: 60px;
   /* background-repeat: no-repeat; */
   background-size: cover;
   /* height: 204px; */
+  height: fit-content;
   min-height: 100%;
   background-position: center;
 }

@@ -8,6 +8,8 @@ import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./../style/header.css";
 import {isMobile} from 'react-device-detect';
+import logoujaputih1 from "./../img/icon/logo_uja putih 1.png"
+import logoujaglow from "./../img/icon/logo_uja_white_glow.svg"
 
 
 const navbarmenu = [
@@ -38,10 +40,10 @@ const navbarmenu = [
 ];
 function changeGlowingLogo(e){
  
-    e.target.src = "logo_uja_white_glow.svg";
+    e.target.src = logoujaglow;
 }
 function changeWhiteLogo(e){
-  e.target.src = "logo_uja putih 1.png";
+  e.target.src = logoujaputih1;
 }
 
 function renderNavBar(currentPage){
@@ -73,7 +75,7 @@ function Header(props) {
     <span class="navbar-toggler-icon"></span>
   </button>
  <div class="container-fluid">
-   <img class="logowhite" src="logo_uja putih 1.png" width="100.56px" height="47.56px"
+   <img class="logowhite" src={logoujaputih1} width="100.56px" height="47.56px"
      onMouseEnter={changeGlowingLogo}
     onMouseLeave={changeWhiteLogo}></img>
    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,9 +92,9 @@ function Header(props) {
   }else {
   return (
     <div style={{ backgroundColor: "#22284C", color: "white" }}>
-     <nav class="navbar fixed-top navbar-expand-lg navbar " style={{backgroundColor: "#22284C", color: "white"}}>
+     <nav class="navbar fixed-top navbar-expand-lg navbar " style={{backgroundColor: "#22284C", color: "white", paddingLeft:40}}>
   <div class="container-fluid">
-    <img class="logowhite" src="logo_uja putih 1.png" width="100.56px" height="47.56px"
+    <img class="logowhite" src={logoujaputih1} width="100.56px" height="47.56px" style={{marginRight:25}}
       onMouseEnter={changeGlowingLogo}
      onMouseLeave={changeWhiteLogo}></img>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

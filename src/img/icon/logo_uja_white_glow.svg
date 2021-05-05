@@ -1,0 +1,43 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1200px" height="824px" viewBox="0 0 12000 8240" preserveAspectRatio="xMidYMid meet">
+<defs>
+    <filter id="blue-glow" x="0" y="0" width="100%" height="100%" filterUnits="userSpaceOnUse">
+        <feFlood result="flood" flood-color="rgb(106,255,246)" flood-opacity=".8"></feFlood>
+        <feComposite in="flood" result="mask" in2="SourceGraphic" operator="in"></feComposite>
+        <feMorphology in="mask" result="dilated" operator="dilate" radius="150"></feMorphology>
+        <feGaussianBlur in="dilated" result="blurred" stdDeviation="100"></feGaussianBlur>
+        <feColorMatrix in="color" result="color" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.8 0"/>
+        <feMerge>
+            <feMergeNode in="blurred"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+        </feMerge>        
+    </filter>
+
+    <filter id="white-glow" x="0" y="0" width="100%" height="100%" filterUnits="userSpaceOnUse">
+    <!-- rgb(211,211,211) -->
+        <feFlood result="flood" flood-color="rgb(211,211,211)" flood-opacity=".8"></feFlood>
+        <feComposite in="flood" result="mask" in2="SourceGraphic" operator="in"></feComposite>
+        <feMorphology in="mask" result="dilated" operator="dilate" radius="200"></feMorphology>
+        <feGaussianBlur in="dilated" result="blurred" stdDeviation="200"></feGaussianBlur>
+        <feColorMatrix in="color" result="color" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.8 0"/>
+        <feMerge>
+            <feMergeNode in="blurred"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+        </feMerge>
+            
+    </filter>
+
+</defs>
+
+<g id="layer101" fill="#000000" stroke="none">
+</g>
+<g id="layer102" fill="#002664" stroke="none">
+<path d="M2575 7909 c-324 -36 -487 -69 -700 -141 -487 -163 -846 -446 -1095 -862 -135 -225 -243 -541 -284 -833 -8 -59 -18 -126 -22 -148 -4 -22 -9 -1015 -11 -2207 l-4 -2168 631 0 630 0 0 2108 c0 2258 -1 2172 49 2357 91 330 343 580 684 679 156 45 289 59 507 53 210 -6 329 -26 473 -81 357 -135 582 -423 642 -821 13 -87 15 -381 15 -2197 l0 -2098 1630 0 1630 0 0 2181 c0 1420 -4 2231 -10 2327 -32 441 -143 796 -345 1103 -88 132 -291 338 -417 422 -340 226 -747 336 -1243 337 -177 0 -262 -7 -440 -36 -112 -18 -305 -66 -305 -75 0 -4 30 -17 68 -30 374 -124 711 -347 959 -634 288 -333 457 -718 493 -1125 8 -87 10 -595 8 -1680 l-3 -1555 -382 -3 -382 -2 -4 1542 c-3 1410 -5 1553 -21 1663 -68 463 -200 801 -434 1113 -76 102 -241 266 -342 341 -47 34 -92 68 -100 74 -45 36 -351 197 -374 197 -3 0 -25 9 -49 19 -82 38 -273 92 -452 130 -53 11 -160 27 -285 42 -107 13 -620 19 -715 8z" style="fill:rgb(255,255,255); filter:url(#white-glow)"/>
+</g>
+<g id="layer103" fill="#a1a1a1" stroke="none">
+<path d="M10057 7748 c-36 -95 -100 -265 -142 -378 -43 -113 -83 -218 -90 -235 -8 -16 -36 -88 -63 -160 -27 -71 -84 -220 -127 -330 -42 -110 -85 -222 -95 -250 -24 -69 -159 -422 -177 -464 -8 -18 -16 -39 -18 -45 -1 -6 -7 -24 -14 -41 -7 -16 -30 -77 -53 -135 -65 -170 -100 -254 -110 -267 -8 -10 -177 -13 -784 -13 l-774 0 0 -615 0 -615 540 0 c441 0 540 -2 540 -13 0 -20 -227 -605 -320 -827 -45 -107 -93 -222 -107 -255 -13 -33 -32 -78 -42 -100 -10 -22 -30 -71 -45 -110 -16 -38 -32 -78 -37 -87 -5 -9 -53 -124 -107 -255 -116 -277 -197 -471 -222 -528 -52 -120 -190 -457 -190 -465 0 -7 217 -10 625 -10 l625 0 16 37 c8 21 35 85 59 143 24 58 78 186 120 285 42 99 101 241 131 315 31 74 62 149 69 165 8 17 36 84 63 150 27 66 102 246 167 400 64 154 126 303 138 330 11 28 33 78 48 113 16 34 29 68 29 75 0 7 4 17 8 22 5 6 21 42 36 80 16 39 37 89 47 112 10 24 39 91 63 150 72 177 246 596 256 618 19 39 190 447 190 452 0 2 11 28 23 56 13 29 59 138 102 242 43 105 86 208 96 230 21 46 208 497 433 1040 87 209 162 388 167 397 5 10 27 62 49 115 50 126 92 226 117 283 11 25 26 61 33 80 7 19 24 60 37 90 31 68 33 72 84 195 23 55 50 120 60 144 11 24 19 45 19 47 0 2 -317 4 -703 4 l-704 0 -66 -172z" style="fill:rgb(255,255,255); filter:url(#white-glow)"/>
+<path d="M6120 810 l0 -490 620 0 620 0 0 490 0 490 -620 0 -620 0 0 -490z" style="fill:rgb(255,255,255); filter:url(#white-glow)"/>
+</g>
+
+
+</svg>

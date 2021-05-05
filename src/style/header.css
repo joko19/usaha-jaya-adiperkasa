@@ -16,6 +16,10 @@
   color: #ffffff;
 }
 
+.nav-item {
+  padding-right: 15px;
+}
+
 .navbar .navbar-expand-lg .navbar {
   padding-top: 1%;
 }

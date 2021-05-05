@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import HorizontalTimeline from "react-horizontal-timeline";
+import React from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Timeline from "@material-ui/lab/Timeline";
@@ -8,12 +7,6 @@ import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
 import TimelineConnector from "@material-ui/lab/TimelineConnector";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineDot from "@material-ui/lab/TimelineDot";
-
-import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
-import FastfoodIcon from "@material-ui/icons/Fastfood";
-import LaptopMacIcon from "@material-ui/icons/LaptopMac";
-import HotelIcon from "@material-ui/icons/Hotel";
-import RepeatIcon from "@material-ui/icons/Repeat";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 
@@ -53,8 +46,6 @@ import ismuntoro from "./../img/photo/ismuntoro.png";
 
 function About() {
   const classes = useStyles();
-  const [value, setValue] = useState("");
-  const [previous, setPrevious] = useState("");
   const team = [
     {
       img: lusia,
@@ -240,9 +231,7 @@ function About() {
       </p>
 
       <div className="timeline">
-        <h2 className="timeline-title">
-          Telah melayani dan dipercaya selama
-        </h2>
+        <h2 className="timeline-title">Telah melayani dan dipercaya selama</h2>
         <h2 className="timeline-year"> 40 tahun</h2>
         <Timeline align="alternate">
           {timeline.map((item) => (
@@ -283,12 +272,11 @@ function About() {
                 <Typography
                   variant="h6"
                   component="h1"
-                  style={{ color: "#FFDD88", fontSize: 48, fontWeight: 'bold' }}
+                  style={{ color: "#FFDD88", fontSize: 48, fontWeight: "bold" }}
                 >
                   2019
                 </Typography>
-                <Typography 
-                  style={{ color: "#FFF", fontSize: 20 }}>
+                <Typography style={{ color: "#FFF", fontSize: 20 }}>
                   PT Usaha Jaya Adi Perkasa akan terus berinovasi untuk
                   mengikuti digital era saat ini
                 </Typography>
@@ -314,7 +302,9 @@ function About() {
         dari negara-negara lain nantinya.
       </p>
       <center>
-        <h2>Kami Siap Melayani Kebutuhan Bisnis Anda</h2>
+        <h2 style={{ marginTop: 75, marginBottom: 25 }}>
+          Kami Siap Melayani Kebutuhan Bisnis Anda
+        </h2>
         {team.map((item) => {
           return <Photo item={item} />;
         })}
@@ -327,7 +317,7 @@ function About() {
 const Photo = (props) => {
   return (
     <div className="photo">
-      <img src={props.item.img} className="photo-img" />
+      <img src={props.item.img} className="photo-img" alt="img" />
       <h6 className="photo-name">{props.item.name}</h6>
       <p className="photo-position">{props.item.position}</p>
     </div>

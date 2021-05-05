@@ -13,19 +13,19 @@ import call from "./../img/dealer/call.png";
 import location from "./../img/dealer/location.png";
 import direction from "./../img/dealer/direction.png";
 import "./../style/Dealer.css";
-import icBentang from './../img/dealer/icBentang.png'
-import icEmpatJaya from './../img/dealer/icEmpatJaya.png'
-import icJaya from './../img/dealer/icJaya.png'
-import icLajuJaya from './../img/dealer/icLajuJaya.png'
-import icMayar from './../img/dealer/icMayar.png'
-import icMitra from './../img/dealer/icMitra.png'
-import icNikimura from './../img/dealer/icNikimura.png'
-import icSurya from './../img/dealer/icSurya.png'
-import icTokoMulya from './../img/dealer/icTokoMulia.png'
-import icTools from './../img/dealer/icTools.png'
-import icTunasBaja from './../img/dealer/icTunasBaja.png'
-import icTunggal from './../img/dealer/icTunggal.png'
-import icYang from './../img/dealer/icYang.png'
+import icBentang from "./../img/dealer/icBentang.png";
+import icEmpatJaya from "./../img/dealer/icEmpatJaya.png";
+import icJaya from "./../img/dealer/icJaya.png";
+import icLajuJaya from "./../img/dealer/icLajuJaya.png";
+import icMayar from "./../img/dealer/icMayar.png";
+import icMitra from "./../img/dealer/icMitra.png";
+import icNikimura from "./../img/dealer/icNikimura.png";
+import icSurya from "./../img/dealer/icSurya.png";
+import icTokoMulya from "./../img/dealer/icTokoMulia.png";
+import icTools from "./../img/dealer/icTools.png";
+import icTunasBaja from "./../img/dealer/icTunasBaja.png";
+import icTunggal from "./../img/dealer/icTunggal.png";
+import icYang from "./../img/dealer/icYang.png";
 
 function Dealers() {
   const classes = useStyles();
@@ -158,21 +158,20 @@ function Dealers() {
               {Jatim.map((data) => (
                 <Grid item md={6} sm={6} xs={12}>
                   <Paper className={classes.paperItem}>
-                    <img src={data.logo} />
+                    <img src={data.logo} alt="logo perusahaan" />
                     <p className="item-title"> {data.name}</p>
                     <div style={{ marginLeft: 60 }}>
-                      <img src={call} />
+                      <img src={call} alt="icon call" />
                       <p className="item-call">{data.telp}</p>
                     </div>
 
                     <div style={{ marginLeft: 60 }}>
-                      <img src={location} />
+                      <img src={location} alt="icon location" />
                       <div className="item-address">{data.address}</div>
                     </div>
 
                     <p className="item-location">
-                      {" "}
-                      Lihat Lokasi Dealer <img src={direction} />
+                      Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
                     </p>
                   </Paper>
                 </Grid>
@@ -196,21 +195,20 @@ function Dealers() {
               {Jateng.map((data) => (
                 <Grid item md={6} sm={6} xs={12}>
                   <Paper className={classes.paperItem}>
-                    <img src={data.logo} />
+                    <img src={data.logo} alt="logo perusahaan" />
                     <p className="item-title"> {data.name}</p>
                     <div style={{ marginLeft: 60 }}>
-                      <img src={call} />
+                      <img src={call} alt="icon call" />
                       <p className="item-call">{data.telp}</p>
                     </div>
 
                     <div style={{ marginLeft: 60 }}>
-                      <img src={location} />
+                      <img src={location} alt="icon location" />
                       <div className="item-address">{data.address}</div>
                     </div>
 
                     <p className="item-location">
-                      {" "}
-                      Lihat Lokasi Dealer <img src={direction} />
+                      Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
                     </p>
                   </Paper>{" "}
                 </Grid>
@@ -234,23 +232,23 @@ function Dealers() {
               {Kalimantan.map((data) => (
                 <Grid item md={6} sm={6} xs={12}>
                   <Paper className={classes.paperItem}>
-                    <img src={data.logo} />
+                    <img src={data.logo} alt="logo perusahaan" />
                     <p className="item-title"> {data.name}</p>
                     <div style={{ marginLeft: 60 }}>
-                      <img src={call} />
+                      <img src={call} alt="icon call" />
                       <p className="item-call">{data.telp}</p>
                     </div>
 
                     <div style={{ marginLeft: 60 }}>
-                      <img src={location} />
+                      <img src={location} alt="icon location" />
                       <div className="item-address">{data.address}</div>
                     </div>
 
                     <p className="item-location">
                       {" "}
-                      Lihat Lokasi Dealer <img src={direction} />
+                      Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
                     </p>
-                  </Paper>{" "}
+                  </Paper>
                 </Grid>
               ))}
             </Grid>
@@ -272,21 +270,21 @@ function Dealers() {
               {Sulawesi.map((data) => (
                 <Grid item md={6} sm={6} xs={12}>
                   <Paper className={classes.paperItem}>
-                    <img src={data.logo} />
+                    <img src={data.logo} alt="logo perusahaan" />
                     <p className="item-title"> {data.name}</p>
                     <div style={{ marginLeft: 60 }}>
-                      <img src={call} />
+                      <img src={call} alt="icon call" />
                       <p className="item-call">{data.telp}</p>
                     </div>
 
                     <div style={{ marginLeft: 60 }}>
-                      <img src={location} />
+                      <img src={location} alt="icon location" />
                       <div className="item-address">{data.address}</div>
                     </div>
 
                     <p className="item-location">
                       {" "}
-                      Lihat Lokasi Dealer <img src={direction} />
+                      Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
                     </p>
                   </Paper>{" "}
                 </Grid>
@@ -310,21 +308,21 @@ function Dealers() {
               {Bali.map((data) => (
                 <Grid item md={6} sm={6} xs={12}>
                   <Paper className={classes.paperItem}>
-                    <img src={data.logo} />
+                    <img src={data.logo} alt="logo perusahaan" />
                     <p className="item-title"> {data.name}</p>
                     <div style={{ marginLeft: 60 }}>
-                      <img src={call} />
+                      <img src={call} alt="icon call" />
                       <p className="item-call">{data.telp}</p>
                     </div>
 
                     <div style={{ marginLeft: 60 }}>
-                      <img src={location} />
+                      <img src={location} alt="icon location" />
                       <div className="item-address">{data.address}</div>
                     </div>
 
                     <p className="item-location">
                       {" "}
-                      Lihat Lokasi Dealer <img src={direction} />
+                      Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
                     </p>
                   </Paper>{" "}
                 </Grid>

@@ -31,7 +31,7 @@ const navbarmenu = [
 },
 {
   title : "Berita",
-  href : "#"
+  href : "/news-and-event"
 },
 {
   title : "Blog",

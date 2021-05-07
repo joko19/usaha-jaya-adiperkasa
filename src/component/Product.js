@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Grid, Paper } from "@material-ui/core";
@@ -9,6 +9,7 @@ import "./../style/Product.css";
 import icDownload from "./../img/product/unduh.png";
 
 function Product() {
+  const [data, setData] = useState([]);
   const kategori = ["Aulektro Dereflex", "Dormer", "Klinger", "Langsol"];
   const sekilas_product = [
     {
@@ -27,9 +28,23 @@ function Product() {
       type: "AULEKTRO",
     },
   ];
+
+  const product=[
+    {
+      category: 'Aulektro Dereflex',
+      title: Aulektro,
+      desc: 'ini deskripsi',
+      photo: pict_product,
+    },
+  ]
+
+  const clickProduct = (product) => {
+    console.log(product);
+    setData(product);
+  };
   return (
     <div>
-      <Header />
+      <Header currentPage="Produk Kami" />
 
       <div className="cover">
         <h1 className="cover-title">Produk Kami</h1>
@@ -38,9 +53,9 @@ function Product() {
         <Grid item md={3} sm={12} xs={12}>
           <Paper style={{ marginLeft: 50, padding: 25 }}>
             <p className="category-title">Kategori</p>
-            <hr style={{border: '3px solid #B4B4B4'}} />
+            <hr style={{ border: "3px solid #B4B4B4" }} />
             {kategori.map((item) => (
-              <div>{item}</div>
+              <div onClick={() => clickProduct(item)}>{item}</div>
             ))}
           </Paper>
         </Grid>
@@ -48,6 +63,7 @@ function Product() {
         <Grid item md={8} sm={12} xs={12}>
           <Grid container>
             <Grid item md={6} sm={12} xs={12} style={{ padding: 25 }}>
+              <h1>{data}</h1>
               <img src={Aulektro} />
               <p className="product-content">
                 Dengan barisan lengkap produk kabel las yang tahan lama dan

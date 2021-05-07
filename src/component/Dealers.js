@@ -137,7 +137,7 @@ function Dealers() {
 
   return (
     <div>
-      <Header />
+      <Header currentPage="Authorized Dealer"/>
       <div className="cover">
         <h1 className="cover-title">Authorized Dealer</h1>
       </div>

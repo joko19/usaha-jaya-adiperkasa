@@ -10,6 +10,12 @@
     font-weight: bold;
 }
 
+.cover-title-home {
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+}
+
 .cover-quality {
     color: #FFC639;
     display: inline;

@@ -23,11 +23,11 @@ const navbarmenu = [
 },
 {
   title: "Produk Kami",
-  href: "#"
+  href: "/product"
 },
 {
   title : "Authorized Dealer",
-  href :"#"
+  href :"/dealers"
 },
 {
   title : "Berita",

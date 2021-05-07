@@ -108,7 +108,7 @@ function Home() {
           <Grid item md={7} sm={12} xs={12} style={{ paddingRight: 50 }}>
             <Fade left>
               {" "}
-              <p className="cover-title">
+              <p className="cover-title-home">
                 Dapatkan Berbagai Macam Produk{" "}
                 <p className="cover-quality">Berkualitas</p> Dari Para Pemasok
                 Mancanegara

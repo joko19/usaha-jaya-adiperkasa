@@ -309,6 +309,7 @@ function About() {
           return <Photo item={item} />;
         })}
       </center>
+      <br/>
       <Footer />
     </div>
   );

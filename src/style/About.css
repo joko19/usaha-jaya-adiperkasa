@@ -26,7 +26,7 @@
     font-weight: bold;
 }
 
-.timeline{
+.timeline {
     margin-top: 50px;
     width: 100%;
 }
@@ -36,13 +36,13 @@
     color: #22284C;
 }
 
-.timeline-year{
+.timeline-year {
     margin-top: -10px;
     color: #FFC639;
     margin-left: 100px;
 }
 
-.timeline-line{
+.timeline-line {
     color: #FFDD88;
     padding: 90%;
 }
@@ -56,51 +56,57 @@
     background-color: black;
 }
 
-.photo-title{
+.photo-title {
     color: #22284C;
 }
 
+/* .photo:hover {
+    opacity: 100%;
+    z-index: 1;
+} */
+/* .photo-img{
+    opacity: 50%;
+} */
 
-.photo:hover > .photo-img {
+.photo-img:hover {
     transform: scale(1.1);
     overflow: hidden;
     transition: transform .5s ease;
-    opacity: 50%;
+    opacity: 0.5;
+    /* z-index: -1; */
 }
 
-.photo:hover > .photo-name{
-    opacity: 100%;
+.photo:hover .photo-name {
+    margin-top: -80px;
+    color: white;
+    position: absolute;
+    opacity: 1.0;
+    z-index: 99;
+    margin-left: 15px;
 }
 
-.photo:hover > .photo-position{
-    opacity: 100%;
+.photo:hover .photo-position {
+    margin-top: -60px;
+    color: white;
+    position: absolute;
+    margin-left: 15px;
+    opacity: 1.0;
+    z-index: 99;
 }
 
-.photo-name {
-    margin-top: -70px;
+/* .photo-name {
+    margin-top: -80px;
     color: white;
     font-weight: 500;
     font-size: 20px;
     text-align: left;
     margin-left: 15px;
     opacity: 0;
-}
+} */
 
-.photo-position {
-    margin-top: -15px;
-    color: white;
+/* .photo-position {
     font-size: 16px;
     text-align: left;
     margin-left: 15px;
     opacity: 0;
-}
-
-.photo-position:hover {
-    opacity: 100%;
-}
-
-
-
-
-
-
+} */

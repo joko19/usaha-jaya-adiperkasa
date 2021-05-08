@@ -135,6 +135,10 @@ function Dealers() {
     },
   ];
 
+  const toLocation = (props) =>{
+    window.open('https://www.google.co.id/maps/search/'+ props)
+  }
+
   return (
     <div>
       <Header currentPage="Authorized Dealer"/>
@@ -170,7 +174,7 @@ function Dealers() {
                       <div className="item-address">{data.address}</div>
                     </div>
 
-                    <p className="item-location">
+                    <p className="item-location" onClick={() =>toLocation(data.address)}>
                       Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
                     </p>
                   </Paper>
@@ -207,7 +211,7 @@ function Dealers() {
                       <div className="item-address">{data.address}</div>
                     </div>
 
-                    <p className="item-location">
+                    <p className="item-location" onClick={() =>toLocation(data.address)}>
                       Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
                     </p>
                   </Paper>{" "}
@@ -244,7 +248,7 @@ function Dealers() {
                       <div className="item-address">{data.address}</div>
                     </div>
 
-                    <p className="item-location">
+                    <p className="item-location" onClick={() =>toLocation(data.address)}>
                       {" "}
                       Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
                     </p>
@@ -282,7 +286,7 @@ function Dealers() {
                       <div className="item-address">{data.address}</div>
                     </div>
 
-                    <p className="item-location">
+                    <p className="item-location" onClick={() =>toLocation(data.address)}>
                       {" "}
                       Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
                     </p>
@@ -320,7 +324,7 @@ function Dealers() {
                       <div className="item-address">{data.address}</div>
                     </div>
 
-                    <p className="item-location">
+                    <p className="item-location" onClick={() =>toLocation(data.address)}>
                       {" "}
                       Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
                     </p>

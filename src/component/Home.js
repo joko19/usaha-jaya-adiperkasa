@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import { Grid, makeStyles, Card, Slide } from "@material-ui/core";
+import { Grid, makeStyles, Card,} from "@material-ui/core";
 import ArrowForwardIosRoundedIcon from "@material-ui/icons/ArrowForwardIosRounded";
 import ArrowBackIosRoundedIcon from "@material-ui/icons/ArrowBackIosRounded";
 import { Fade } from "react-reveal";
 import Rating from "@material-ui/lab/Rating";
-import Slider from "react-animated-slider";
+// import Slider from "react-animated-slider";
 import "./../style/Home.css";
 import batuGerinda from "./../img/batu_gerinda.png";
 import batuPoles from "./../img/batu_poles.png";
@@ -25,8 +25,7 @@ import icSurya from "./../img/icSurya.png";
 
 function Home() {
   const [slideCount, setSlideCount] = useState(0);
-  
-
+  // const [count, setCount] = useState({});
   const product = [
     {
       name: "Paking Mesin",
@@ -62,7 +61,7 @@ function Home() {
     console.log(slideCount);
   };
 
-  const client = [
+  const client1 = [
     {
       name: "CV. Empat Jaya",
       img: icEmpat,
@@ -75,6 +74,8 @@ function Home() {
       desc:
         "Produk konstruksi sangat berkualitas dan pelayanan yang memuaskan, belum pernah kecewa dengan produk PT UJA selama ini",
     },
+  ];
+  const client2 = [
     {
       name: "PT. Centralindo Abadi Teknik ",
       img: icCentralindo,
@@ -87,6 +88,8 @@ function Home() {
       desc:
         "PT UJA adalah partner kami dalam memberikan suku cadang yang berkualitas dan terpercaya serta memberikan pelayanan yang terbaik kepada para konsumennya",
     },
+  ];
+  const client3 = [
     {
       name: "PT. Agung Nagasaki Teknik",
       img: icAgung,
@@ -100,6 +103,7 @@ function Home() {
         "Kami telah mempercayakan semua kebutuhan konstruksi kami kepada PT UJA sejak dulu karena kualitas yang masih tetap terjaga",
     },
   ];
+
   return (
     <div>
       <Header currentPage="Home" />
@@ -222,15 +226,48 @@ function Home() {
 
       {/* review client */}
       <p className="product">Penilaian Klien</p>
-        <div className="itc">
-          {client.map((item) => (
-            // <Carousel>
-            <ItemClient data={item} />
-            //  </Carousel>
-          ))}
-        </div>
-
-      <Footer/>
+      <Grid container>
+        <Grid item md={4}>
+          {" "}
+          <Carousel
+            animation="fade"
+            index={0}
+            navButtonsAlwaysInvisible={true}
+            indicators={false}
+          >
+            {client1.map((item) => (
+              <ItemClient data={item} />
+            ))}
+          </Carousel>
+        </Grid>
+        <Grid item md={4}>
+          {" "}
+          <Carousel
+            animation="fade"
+            index={1}
+            navButtonsAlwaysInvisible={true}
+            indicators={false}
+          >
+            {client2.map((item) => (
+              <ItemClient data={item} />
+            ))}
+          </Carousel>
+        </Grid>
+        <Grid item md={4}>
+          {" "}
+          <Carousel
+            animation="fade"
+            index={2}
+            navButtonsAlwaysInvisible={true}
+            indicators={false}
+          >
+            {client3.map((item) => (
+              <ItemClient data={item} />
+            ))}
+          </Carousel>
+        </Grid>
+      </Grid>
+      <Footer />
     </div>
   );
 }

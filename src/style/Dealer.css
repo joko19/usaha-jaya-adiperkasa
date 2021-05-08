@@ -33,3 +33,7 @@
     color: #FFC639;
     font-size: 20px;
 }
+
+.item-location:hover{
+    cursor: pointer;
+}

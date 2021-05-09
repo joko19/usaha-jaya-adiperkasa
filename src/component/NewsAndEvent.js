@@ -10,9 +10,6 @@ import news3 from "./../img/news/News3.png"
 import iconcalendar from "./../img/iconcalendar.png"
 function NewsAndEvent() {
 
-
-  // tulis semua item news 
-
   const news = [
     {
       img : news1,
@@ -32,6 +29,16 @@ function NewsAndEvent() {
       date : "16 April 2021"
     }
   ];
+
+  const YoutubePlayer = (url) =>{
+    return (
+      <div className="youtube-player">
+        <iframe width="644" height="362" src="https://www.youtube.com/embed/P5dg09Gjd0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+    )
+
+  }
 
 
  

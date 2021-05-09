@@ -62,3 +62,9 @@ br {
   margin: 2.5em 0; /* FF for instance */
   line-height: 5em; /* chrome for instance */
 }
+.youtube-player {
+  width: max-content;
+  height: max-content;
+  background-color: black;
+  opacity: 0.5;
+}

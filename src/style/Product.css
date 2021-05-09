@@ -1,58 +1,62 @@
-.category-title{
-    font-size: 20px;
-    color: #383E5E;
-    font-weight: bold;
+.category-title {
+  font-size: 20px;
+  color: #383e5e;
+  font-weight: bold;
 }
 
-.product-photo{
-    margin-top: 150px;
+.product-photo {
+  margin-top: 150px;
 }
 
-.product-content{
-    color: #646982;
-    font-size: 20px;
-    margin-top: 77px;
+.product-content {
+  color: #646982;
+  font-size: 20px;
+  margin-top: 77px;
 }
 
-.detail-info-title{
-    font-size: 18px;
-    color: #9194A6;
-    margin-top: 25px;
+.detail-info-title {
+  font-size: 18px;
+  color: #9194a6;
+  margin-top: 25px;
 }
 
-.detail-info{
-    font-size: 20px;
-    color: #383E5E;
-    font-weight: bold;
-
+.detail-info {
+  font-size: 20px;
+  color: #383e5e;
+  font-weight: bold;
 }
 
-.sp{
-    text-align: center;
-    margin-bottom: 35px;
+.sp {
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 .sp-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 500;
-    color: #22284C;
-    margin: 20px;
-
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #22284c;
+  margin: 20px;
 }
 
 .sp-item {
-    display: inline-block;
-    padding: 25px;
+  display: inline-table;
+  padding: 25px;
 }
 
-.sp-name{
-    font-size: 18px;
-    font-weight: 600;
-    color: #22284C;
+.sp-name {
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 195px;
+  color: #22284c;
+  word-break: break-all;
 }
 
-.sp-type{
-    font-size: 14px;
-    color: #E6B233;
+.sp-type {
+  font-size: 14px;
+  color: #e6b233;
+}
+
+.category-menu-side {
+  padding-bottom: 20px;
 }

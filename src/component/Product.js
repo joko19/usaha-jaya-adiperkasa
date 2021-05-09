@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import { Grid, Paper, FormControlLabel, Checkbox } from "@material-ui/core";
+import { Grid, Paper } from "@material-ui/core";
 import Aulektro from "./../img/product/aulektro_deroflex.png";
 import pict_product from "./../img/product/pict_produk.png";
 import dormer_title from "./../img/product/dormer_title.png";
@@ -31,6 +31,44 @@ import nippon_2 from "./../img/product/nippon_2.png";
 import nippon_3 from "./../img/product/nippon_3.png";
 import nippon_4 from "./../img/product/nippon_4.png";
 import nippon_5 from "./../img/product/nippon_5.png";
+import nishiki_title from "./../img/product/nishiki_title.png";
+import nishiki_pict_produk from "./../img/product/nishiki_pict_produk.png";
+import nishiki_1 from "./../img/product/nishiki_1.png";
+import nishiki_2 from "./../img/product/nishiki_2.png";
+import nishiki_3 from "./../img/product/nishiki_3.png";
+import nishiki_4 from "./../img/product/nishiki_4.png";
+import nishiki_5 from "./../img/product/nishiki_5.png";
+import roha_title from "./../img/product/roha_title.png";
+import roha_pict_produk from "./../img/product/roha_pict_produk.png";
+import roha_1 from "./../img/product/roha_1.png";
+import roha_2 from "./../img/product/roha_2.png";
+import roha_3 from "./../img/product/roha_3.png";
+import roha_4 from "./../img/product/roha_4.png";
+import roha_5 from "./../img/product/roha_5.png";
+import shuangge_title from "./../img/product/shuangge_title.png";
+import shuangge_pict_produk from "./../img/product/shuangge_pict_produk.png";
+import shuangge_1 from "./../img/product/shuangge_1.png";
+import shuangge_2 from "./../img/product/shuangge_2.png";
+import shuangge_3 from "./../img/product/shuangge_3.png";
+import shuangge_4 from "./../img/product/shuangge_4.png";
+import shuangge_5 from "./../img/product/shuangge_5.png";
+import t3a_title from "./../img/product/T3A_title.png";
+import t3a_pict_produk from "./../img/product/t3a_pict_produk.png";
+import t3a_1 from "./../img/product/t3a_1.png";
+import westlake_title from "./../img/product/westlake_title.png";
+import westlake_pict_produk from "./../img/product/westlake_pict_produk.png";
+import westlake_1 from "./../img/product/westlake_1.png";
+import westlake_2 from "./../img/product/westlake_2.png";
+import westlake_3 from "./../img/product/westlake_3.png";
+import westlake_4 from "./../img/product/westlake_4.png";
+import westlake_5 from "./../img/product/westlake_5.png";
+import yamato_title from "./../img/product/yamato_title.png";
+import yamato_pict_produk from "./../img/product/yamato_pict_produk.png";
+import yamato_1 from "./../img/product/yamato_1.png";
+import yamato_2 from "./../img/product/yamato_2.png";
+import yamato_3 from "./../img/product/yamato_3.png";
+import yamato_4 from "./../img/product/yamato_4.png";
+import yamato_5 from "./../img/product/yamato_5.png";
 import sp from "./../img/product/sp_.png";
 import las_orange from "./../img/product/aulektrolasorange.png";
 import "./../style/Product.css";
@@ -46,6 +84,12 @@ function Product() {
     "Klinger",
     "Langsol",
     "Nippon Resibon",
+    "Nishiki",
+    "Roha",
+    "Shuang Ge",
+    "T3A",
+    "Westlake",
+    "Yamato"
   ];
 
   const sekilas_product = [
@@ -175,6 +219,162 @@ function Product() {
       nama: "Cutting Wheel",
       type: "",
     },
+    {
+      category: "Nishiki",
+      img: nishiki_1,
+      nama: " Cup Brush",
+      type: "SN-075A3",
+    },
+    {
+      category: "Nishiki",
+      img: nishiki_2,
+      nama: "Twisted Wire Brush",
+      type: "TN-075G5",
+    },
+    {
+      category: "Nishiki",
+      img: nishiki_3,
+      nama: "Wheel Brush",
+      type: "VH-106K5",
+    },
+    {
+      category: "Nishiki",
+      img: nishiki_4,
+      nama: "Shank Wire Brush",
+      type: "SE-010A3",
+    },
+    {
+      category: "Nishiki",
+      img: nishiki_5,
+      nama: "N3 Nylon Filament Wire Type Grit #46",
+      type: "",
+    },
+    {
+      category: "Roha",
+      img: roha_1,
+      nama: "E6013 (RH-60)",
+      type: "Mild Steel",
+    },
+    {
+      category: "Roha",
+      img: roha_2,
+      nama: "RH-E7018",
+      type: "High Tensile Steel",
+    },
+    {
+      category: "Roha",
+      img: roha_3,
+      nama: "RH-E7018ER70S-6 (RH-70) WELDING WIRE ROLL CO2",
+      type: "General Steel",
+    },
+    {
+      category: "Roha",
+      img: roha_4,
+      nama: "WELDING WIRE ROLL CO2 E71T-1 ",
+      type: "Stainless Steel",
+    },
+    {
+      category: "Roha",
+      img: roha_5,
+      nama: "E308-16 (RH-308) STAINLESS STEEL ELECTRODE",
+      type: "Stainless Steel",
+    },
+    {
+      category: "Shuang Ge",
+      img: shuangge_1,
+      nama: "HS Series Hoist",
+      type: "",
+    },
+    {
+      category: "Shuang Ge",
+      img: shuangge_2,
+      nama: "HS -T Series Hoist",
+      type: "",
+    },
+    {
+      category: "Shuang Ge",
+      img: shuangge_3,
+      nama: "HSH - D Series Lever Blocks",
+      type: "",
+    },
+    {
+      category: "Shuang Ge",
+      img: shuangge_4,
+      nama: "GCL - AK Series Geared Trolley",
+      type: "",
+    },
+    {
+      category: "Shuang Ge",
+      img: shuangge_5,
+      nama: "GCT - AK Series Plain Trolley",
+      type: ""
+    },
+    {
+      category: "T3A",
+      img: t3a_1,
+      nama: "Paking Mesin",
+      type: ""
+    },
+    {
+      category: "Westlake",
+      img: westlake_1,
+      nama: "Light Type Bench Drilling Machine",
+      type: "ZHX-13/I"
+    },
+    {
+      category: "Westlake",
+      img: westlake_2,
+      nama: "Light Type Bench Drilling Machine",
+      type: "ZQD4125/ZQD4132"
+    },
+    {
+      category: "Westlake",
+      img: westlake_3,
+      nama: "Industrial Type Bench Drilling Machine",
+      type: "Z516"
+    },
+    {
+      category: "Westlake",
+      img: westlake_4,
+      nama: "Radial Drilling Machine",
+      type: "Z3025x7/Z3032x7"
+    },
+    {
+      category: "Westlake",
+      img: westlake_5,
+      nama: "High-Speed Accuracy Drilling Machine",
+      type: "ZWG-4(A)"
+    },
+    {
+      category: "Yamato",
+      img: yamato_1,
+      nama: "Regulator For Oxygen",
+      type: ""
+    },
+    {
+      category: "Yamato",
+      img: yamato_2,
+      nama: "Regulator For C02 + With Heater",
+      type: ""
+    },
+    {
+      category: "Yamato",
+      img: yamato_3,
+      nama: "Regulator For Nitrogen High Pressure",
+      type: ""
+    },
+    {
+      category: "Yamato",
+      img: yamato_4,
+      nama: "Large Cutting Tip (A)",
+      type: ""
+    },
+    {
+      category: "Yamato",
+      img: yamato_5,
+      nama: "Cutting Torch Medium Type 201",
+      type: ""
+    },
   ];
 
   const produk = [
@@ -223,6 +423,47 @@ function Product() {
         "Diantaranya terdapat “The Super Series” yang secara signifiikan dapat meningkatkan performa dari alat abrasi dan gerinda pada umumnya, “Colored Grinding Wheel” yang merubah persepsi industri terhadap seluruh kategori produk, dan “Flexible Grinding Wheel” merupakan jenis yang pertama dalam industri ini. Nippon Ressibon adalah merek profesional, dan produk ini juga telah menjadi merek unggulan dalam menggerinda dan memotong selama bertahun - tahun. ",
       photo: nippon_pict_produk,
     },
+    {
+      category : "Nishiki",
+      title : nishiki_title,
+      desc : "Sikat kawat industri merupakan produk yang umum yang dapat ditemukan dan diproduksi di banyak negara. Yang membuat Nishiki King berbeda dari yang lain adalah produk ini menggunakan sistem cincin tetap, kawat lentur, dan metode pengolahan dalam memproduksi guna menghasilkan keseimbangan dalam berotasi selama beroperasi."+
+      "Hal ini memastikan efisiensi kinerja yang terpercaya demi keselamatan penggunanya. Merek ini terus berinovasi dan memiliki berbagai macam sikat seperti power brushes, maintenance brushes, custom-designed conveyor cleaning brushes, dan strip brush seals.",
+      photo : nishiki_pict_produk
+    },
+    {
+      category : "Roha",
+      title : roha_title,
+      desc : "Produk - produk ROHA mencakup peralatan dan perlengkapan las. Produk ROHA adalah produk berkualitas dengan harga yang sangat terjangkau."+
+      "Jajaran produk ROHA terus diperbarui dengan quality control yang tinggi, agar kinerja dan kualitas produk tetap terjaga dan mampu memberikan hasil yang maksimal.",
+      photo : roha_pict_produk
+    },
+    {
+      category : "Shuang Ge",
+      title : shuangge_title,
+      desc : "Produsen katrol rantai dan katrol tuas yang berasal dari Tiongkok ini telah berhasil mengekspor produk mereka ke lebih daro 60 negara di Eropa, Amerika, Timur Tengah, Australia, Asia Tenggara, Afrika."+
+      "Produk ini telah mendapatkan reputasi yang baik dari klien mereka dan mematahkan persepsi mengenai produk buatan Tiongkok dengan secara terus menerus membuat produk berkualitas tinggi, aman, dan terpercaya serta pelayanan cepat dan efisien.",
+      photo : shuangge_pict_produk
+    },
+    {
+      category : "T3A",
+      title : t3a_title,
+      desc : "Paking Gasket TBA adalah sebuah bahan kertas yang terbuat dari kertas khusus gasket tipe cair (liquid Gasket), oksime silicone yang bermutu tinggi."+
+      "Fungsi dari paking gasket TBA adalah untuk mengontrol kebocoran, bukan untuk mencegah seluruh kebocoran.",
+      photo : t3a_pict_produk
+    },
+    {
+      category : "Westlake",
+      title : westlake_title,
+      desc : "West Lake Drilling mesin Co, Ltd adalah produsen terbesar mesin bor, mesin milling & drilling, dan mesin trapping yang berasal dari Hangzhou, China yang berdiri sejak tahun 1956. Dengan merk “WEST LAKE”, ada berbagai jenis produk dengan kualitas tinggi dengan harga terjangkau. Kami memperoleh sertifikasi ISO 9002QA & ISO 9001:2000."+
+      "West Lake merupakan merk yang memiliki kualitas mesin bor duduk yang baik. Sehingga mesin ini cocok untuk digunakan mulai dari hobi, hingga industri menengah ke atas.",
+      photo : westlake_pict_produk
+    },
+    {
+      category : "Yamato",
+      title : yamato_title,
+      desc : "Dengan pengalaman lebih dari 40 tahun, peralatan Yamato memiliki performa dan kinerja yang sangat baik. Motto produksi Yamato adalah “Selalu membuat produk = produk unggulan, dan perlengkapan yang mudah digunakan”. Yamato memiliki banyak sekali jajaran alat - alat potong dan las yang cocok untuk semua kebutuhan pengguna.”",
+      photo : yamato_pict_produk
+    }
   ];
 
   let currentProduct = [];

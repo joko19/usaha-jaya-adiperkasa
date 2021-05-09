@@ -1,10 +1,4 @@
 import React, {useState} from "react";
-import { Navbar } from "react-bootstrap";
-import { Nav } from "react-bootstrap";
-import { Form } from "react-bootstrap";
-import { FormControl } from "react-bootstrap";
-import { NavDropdown } from "react-bootstrap";
-import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./../style/header.css";
 import {isMobile} from 'react-device-detect';
@@ -46,6 +40,10 @@ function changeWhiteLogo(e){
   e.target.src = logoujaputih1;
 }
 
+function openhome(){
+  window.open("/","_self")
+}
+
 function renderNavBar(currentPage){
   let list = [];
   navbarmenu.forEach(element => {
@@ -75,9 +73,10 @@ function Header(props) {
     <span class="navbar-toggler-icon"></span>
   </button>
  <div class="container-fluid">
+   <a href="/">
    <img class="logowhite" src={logoujaputih1} width="100.56px" height="47.56px"
      onMouseEnter={changeGlowingLogo}
-    onMouseLeave={changeWhiteLogo}></img>
+    onMouseLeave={changeWhiteLogo} onClick={openhome}></img></a>
    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
    </button>
@@ -96,7 +95,7 @@ function Header(props) {
   <div class="container-fluid">
     <img class="logowhite" src={logoujaputih1} width="100.56px" height="47.56px" style={{marginRight:25}}
       onMouseEnter={changeGlowingLogo}
-     onMouseLeave={changeWhiteLogo}></img>
+     onMouseLeave={changeWhiteLogo}  onClick={openhome}></img>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

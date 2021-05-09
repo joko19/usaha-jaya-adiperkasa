@@ -40,21 +40,21 @@ function Dealers() {
     },
     {
       logo: icEmpatJaya,
-      name: "CV Empat Jaya",
+      name: "CV.Empat Jaya",
       telp: "+62313521388",
       address:
         "Jl. Dupak No.152 A, Gundih, Kec. Bubutan, Kota SBY, Jawa Timur 60172",
     },
     {
       logo: icBentang,
-      name: "PT Bentang Persada Internusa",
+      name: "PT.Bentang Persada Internusa",
       telp: "+628113526178",
       address:
         "Jl. Margomulyo No.46, Greges, Asemrowo, Surabaya City, East Java 60183",
     },
     {
       logo: icLajuJaya,
-      name: "CV Laju Jaya Teknik",
+      name: "CV.Laju Jaya Teknik",
       telp: "+62315036015",
       address:
         "Jl. Kapas Krampung No.198-A, Ploso, Kec. Tambaksari, Kota SBY, Jawa Timur 60133",
@@ -64,14 +64,14 @@ function Dealers() {
   const Jateng = [
     {
       logo: icTunggal,
-      name: "CV Tunggal Pantes Sukses",
+      name: "CV.Tunggal Pantes Sukses",
       telp: "+62271664997",
       address:
         "Jl. Suryopranoto No.14, Kepatihan Wetan, Kec. Jebres, Kota Surakarta, Jawa Tengah 57129",
     },
     {
       logo: icMayar,
-      name: "CV Manyar",
+      name: "CV.Manyar",
       telp: "+6281329869226",
       address:
         "Jl. Poncowinatan No.49, Gowongan, Kec. Jetis, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55233",
@@ -105,7 +105,7 @@ function Dealers() {
   const Sulawesi = [
     {
       logo: icSurya,
-      name: "CV Surya Kencana Teknik",
+      name: "CV.Surya Kencana Teknik",
       telp: "+624113616551",
       address:
         "Jl. Dr. Wahidin Sudiro Husodo No.109, Ende, Kec. Wajo, Kota Makassar, Sulawesi Selatan 90156",
@@ -121,7 +121,7 @@ function Dealers() {
   const Bali = [
     {
       logo: icJaya,
-      name: "PT Jaya Pratama Groserindo",
+      name: "PT.Jaya Pratama Groserindo",
       telp: "+623619073369",
       address:
         "Jl. Gatot Subroto Barat No.305D, Pemecutan Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80111",

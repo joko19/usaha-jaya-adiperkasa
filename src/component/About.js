@@ -211,7 +211,7 @@ function About() {
     {
       year: "2017",
       desc:
-        "Tahun dimana Usaha Jaya merubah nama dari UD. Usaha Jaya menjadi PT Usaha Jaya Adi Perkasa",
+        "Tahun dimana Usaha Jaya merubah nama dari UD. Usaha Jaya menjadi PT.Usaha Jaya Adi Perkasa",
     },
   ];
   return (
@@ -222,10 +222,10 @@ function About() {
       </div>
       <p className="desc-first">
         Sebagai bagian dari Usaha Jaya Group{" "}
-        <strong className="desc-bold">PT Usaha Jaya Adiperkasa (PT UJA)</strong>
+        <strong className="desc-bold">PT.Usaha Jaya Adiperkasa (PT.UJA)</strong>
         adalah salah satu perusahaan import dan distribusi yang berpengalaman,
         ahli dalam hal pengadaan alat, perangkat dan suku cadang untuk pabrik,
-        konstruksi, Galangan kapal dan industri manufaktur. PT UJA beroperasi
+        konstruksi, Galangan kapal dan industri manufaktur. PT.UJA beroperasi
         dan memiliki jaringan yang tersebar di seluruh Indonesia, khususnya
         wilayah Indonesia Timur.
       </p>
@@ -277,7 +277,7 @@ function About() {
                   2019
                 </Typography>
                 <Typography style={{ color: "#FFF", fontSize: 20 }}>
-                  PT Usaha Jaya Adi Perkasa akan terus berinovasi untuk
+                  PT.Usaha Jaya Adi Perkasa akan terus berinovasi untuk
                   mengikuti digital era saat ini
                 </Typography>
               </Paper>
@@ -287,7 +287,7 @@ function About() {
       </div>
 
       <p className="desc">
-        PT UJA menyatukan aspirasi dan kebutuhan masyarakat Indonesia dengan
+        PT.UJA menyatukan aspirasi dan kebutuhan masyarakat Indonesia dengan
         memasok berbagai macam produk berkualitas dan mendistribusikannya secara
         luas di seluruh wilayah Indonesia serta tetap mengutamakan dalam hal
         memberikan pelayanan serta menjaga hubungan kerjasama yang baik di
@@ -295,7 +295,7 @@ function About() {
       </p>
 
       <p className="desc">
-        Dengan adanya kualitas produk yang dapat diandalkan dan terjaga, PT UJA
+        Dengan adanya kualitas produk yang dapat diandalkan dan terjaga, PT.UJA
         berharap dapat terus membangun dan menjaga hubungan baik dengan para
         pemasok dari mancanegara, seperti Jepang, Jerman, Inggris, Tiongkok,
         Taiwan, Australia, Italia dan tidak menutup kemungkinan adanya pemasok

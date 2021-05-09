@@ -1,6 +1,4 @@
 import React from "react";
-import { Grid, makeStyles, Card, Menu } from "@material-ui/core";
-import { Fade } from "react-reveal";
 import "./../style/Footer.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {isMobile} from 'react-device-detect';
@@ -13,7 +11,7 @@ import iconyoutube from "./../img/icon/iconyoutube.png"
 import logoujaputih1 from "./../img/icon/logo_uja putih 1.png"
 function Footer() {
 
-  const imglogo = [iconinstagram, iconfb, iconyoutube];
+  const imglogo = [{ icon : iconinstagram, link :"https://www.instagram.com/usahajaya.adiperkasa/"}, { icon : iconfb, link :"https://www.facebook.com/ujadiperkasa"}, {icon : iconyoutube, link:"https://www.youtube.com/channel/UCsy4EqK1eA1DIiB9zGVoWnA"}];
 
   const data_menu = [
 
@@ -25,17 +23,17 @@ function Footer() {
     {
       classname : "sub-menu",
       menu : "Produk Kami",
-      link : ""
+      link : "/product"
     },
     {
       classname : "sub-menu",
       menu : "Authorized Dealers",
-      link : ""
+      link : "/dealers"
     },
     {
       classname:  "sub-menu",
       menu : "Berita",
-      link : ""
+      link : "/news-and-event"
     },
     {
       classname : "sub-menu",
@@ -62,7 +60,7 @@ function Footer() {
   function mediaSocialList(){
     let list = [];
     imglogo.forEach(element =>{
-      list.push(<li class="list-inline-item" id="media_social_item" ><img src={element} style={{width:60, height:60}}></img></li>)
+      list.push(<li class="list-inline-item" id="media_social_item" ><a target="_blank" href={element.link}><img src={element.icon} style={{width:60, height:60}}></img></a></li>)
     });
     return list;
   }
@@ -109,7 +107,7 @@ function Footer() {
     <div class="row align-items-center">
       <div class="col">
       <img class="logo-uja-footer-mobile" src={logoujaputih1} width="104px" heigth="71px"></img>
-      <p className="nama-perusahaan-mobile">PT Usaha Jaya Adiperkasa</p>
+      <p className="nama-perusahaan-mobile">PT.Usaha Jaya Adiperkasa</p>
       </div>
       </div>
       <div class="row">
@@ -166,7 +164,7 @@ function Footer() {
       <div class="row">
         <div class="col-md-auto">
         <img class="logo-uja-footer" src={logoujaputih1} width="104px" heigth="71px"></img>
-        <p className="nama-perusahaan">PT Usaha Jaya Adiperkasa</p>
+        <p className="nama-perusahaan">PT.Usaha Jaya Adiperkasa</p>
         </div>
       
         <div class="col-2">

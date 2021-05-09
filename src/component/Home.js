@@ -66,13 +66,13 @@ function Home() {
       name: "CV. Empat Jaya",
       img: icEmpat,
       desc:
-        "PT UJA adalah partner kami dalam memberikan suku cadang yang berkualitas dan terpercaya serta memberikan pelayanan yang terbaik kepada para konsumennya",
+        "PT.UJA adalah partner kami dalam memberikan suku cadang yang berkualitas dan terpercaya serta memberikan pelayanan yang terbaik kepada para konsumennya",
     },
     {
       name: "CV. Laju Jaya Teknik",
       img: icLaju,
       desc:
-        "Produk konstruksi sangat berkualitas dan pelayanan yang memuaskan, belum pernah kecewa dengan produk PT UJA selama ini",
+        "Produk konstruksi sangat berkualitas dan pelayanan yang memuaskan, belum pernah kecewa dengan produk PT.UJA selama ini",
     },
   ];
   const client2 = [
@@ -80,13 +80,13 @@ function Home() {
       name: "PT. Centralindo Abadi Teknik ",
       img: icCentralindo,
       desc:
-        "Kami telah mempercayakan semua kebutuhan konstruksi kami kepada PT UJA sejak dulu karena kualitas yang masih tetap terjaga",
+        "Kami telah mempercayakan semua kebutuhan konstruksi kami kepada PT.UJA sejak dulu karena kualitas yang masih tetap terjaga",
     },
     {
       name: "CV. Manyar",
       img: icManyar,
       desc:
-        "PT UJA adalah partner kami dalam memberikan suku cadang yang berkualitas dan terpercaya serta memberikan pelayanan yang terbaik kepada para konsumennya",
+        "PT.UJA adalah partner kami dalam memberikan suku cadang yang berkualitas dan terpercaya serta memberikan pelayanan yang terbaik kepada para konsumennya",
     },
   ];
   const client3 = [
@@ -94,13 +94,13 @@ function Home() {
       name: "PT. Agung Nagasaki Teknik",
       img: icAgung,
       desc:
-        "Produk konstruksi sangat berkualitas dan pelayanan yang memuaskan, belum pernah kecewa dengan produk PT UJA selama ini",
+        "Produk konstruksi sangat berkualitas dan pelayanan yang memuaskan, belum pernah kecewa dengan produk PT.UJA selama ini",
     },
     {
-      name: "CV Surya Kencana Teknik",
+      name: "CV.Surya Kencana Teknik",
       img: icSurya,
       desc:
-        "Kami telah mempercayakan semua kebutuhan konstruksi kami kepada PT UJA sejak dulu karena kualitas yang masih tetap terjaga",
+        "Kami telah mempercayakan semua kebutuhan konstruksi kami kepada PT.UJA sejak dulu karena kualitas yang masih tetap terjaga",
     },
   ];
 
@@ -144,13 +144,13 @@ function Home() {
           <Fade left>
             <p className="vm-title">Mengapa memilih kami ?</p>
             <p className="vm-desc">
-              PT Usaha Jaya Adiperkasa (PT UJA) adalah salah satu perusahaan
+              PT.Usaha Jaya Adiperkasa (PT.UJA) adalah salah satu perusahaan
               import dan distribusi yang berpengalaman, ahli dalam hal pengadaan
               alat, perangkat dan suku cadang untuk pabrik, konstruksi, Galangan
               kapal dan industri manufaktur.
             </p>
             <p className="vm-desc">
-              PT UJA menyatukan aspirasi dan kebutuhan masyarakat Indonesia
+              PT.UJA menyatukan aspirasi dan kebutuhan masyarakat Indonesia
               dengan memasok berbagai macam produk berkualitas dan
               mendistribusikannya secara luas di seluruh wilayah Indonesia serta
               tetap mengutamakan dalam hal memberikan pelayanan serta menjaga

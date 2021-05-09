@@ -130,8 +130,7 @@
     overflow-x: hidden;
     overflow: auto;
     white-space: nowrap;
-
-
+    background-color: chartreuse;
 }
 
 .itc-container {

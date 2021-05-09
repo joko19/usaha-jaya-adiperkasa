@@ -242,6 +242,7 @@ function Home() {
             index={0}
             navButtonsAlwaysInvisible={true}
             indicators={false}
+            interval={3000}
           >
             {client1.map((item) => (
               <ItemClient data={item} />
@@ -255,6 +256,7 @@ function Home() {
             index={1}
             navButtonsAlwaysInvisible={true}
             indicators={false}
+            interval={3500}
           >
             {client2.map((item) => (
               <ItemClient data={item} />
@@ -268,6 +270,8 @@ function Home() {
             index={2}
             navButtonsAlwaysInvisible={true}
             indicators={false}
+
+            interval={3700}
           >
             {client3.map((item) => (
               <ItemClient data={item} />

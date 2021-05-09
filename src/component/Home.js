@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import { Grid, makeStyles, Card,} from "@material-ui/core";
+import { Grid, makeStyles, Card } from "@material-ui/core";
 import ArrowForwardIosRoundedIcon from "@material-ui/icons/ArrowForwardIosRounded";
 import ArrowBackIosRoundedIcon from "@material-ui/icons/ArrowBackIosRounded";
 import { Fade } from "react-reveal";
@@ -14,6 +14,7 @@ import borDuduk from "./../img/bor_duduk.png";
 import pakingMesin from "./../img/paking_mesin.png";
 import pakingMesinSquare from "./../img/paking_mesin_square.png";
 import kawatLasSquare from "./../img/kawat_las_square.png";
+import kabelLas from './../img/kabel_las 1.png'
 import BatuPolesSquare from "./../img/batu_poles_square.png";
 import Carousel from "react-material-ui-carousel";
 import icEmpat from "./../img/icEmpat.png";
@@ -22,6 +23,7 @@ import icCentralindo from "./../img/icCentralindo.png";
 import icManyar from "./../img/icManyar.png";
 import icAgung from "./../img/icAgung.png";
 import icSurya from "./../img/icSurya.png";
+import { useHistory } from "react-router-dom";
 
 function Home() {
   const [slideCount, setSlideCount] = useState(0);
@@ -32,19 +34,22 @@ function Home() {
       desc:
         "Paking Gasket TBA adalah sebuah bahan kertas yang terbuat dari kertas khusus gasket tipe cair (Liquid Gasket), oksirne silicone yang bermutu tinggi. Fungsi dari paking gasket TBA adalah untuk mengontrol kebocoran, bukan untuk mencegah seluruh kebocoran ",
       img: pakingMesinSquare,
+      brand: "Klinger",
     },
 
     {
-      name: "Kawat Las",
+      name: "Kabel Las",
       desc:
-        "Produk- produk ROHA mencakup peralatan dan perlengkapan las. Produk ROHA adalah produk berkualitas dengan harga yang sangat terjangkau. \n \n Jajaran produk ROHA terus diperbarui dengan quality control yang tinggi, agar kinerja dan kualitas produk tetap terjaga dan mampu memberikan hasil yang maksimal.",
-      img: kawatLasSquare,
+        "Dengan barisan lengkap produk kabel las yang tahan lama dan dapat diandalkan, kami menyediakan produk yang cocok dihampir seluruh pengguna dan tingkat tekanan. Berbagai pilihan melengkapi dengan fitting yang sama macamnya dan kuat, yang dibuat dengan akurat dan diproduksi menjadi kualitas terbaik. Tersedia dalam berbagai ukuran dan konfigurasi.",
+      img: kabelLas,
+      brand:'Aulektro Deroflex'
     },
     {
       name: "Batu Poles",
       desc:
         "Sebagai produsen terkemuka yang berasal dari Jerman, dalam hal memoles, Langsol telah menjadi produk unggulan untuk pengerjaan permukaan dengan kualitas tinggi seperti logam, coats, dan plastik.  \n Produk ini menyediakan berbagai macam produk yang digunakan untuk memoles berbagai jenis bahan industri, mulai dari bahan stainless stell, alumunium, logam, logam non-ferrous, kayu clear coat hingga logam clear coat.",
       img: BatuPolesSquare,
+      brand: "Langsol",
     },
   ];
 
@@ -103,6 +108,13 @@ function Home() {
         "Kami telah mempercayakan semua kebutuhan konstruksi kami kepada PT.UJA sejak dulu karena kualitas yang masih tetap terjaga",
     },
   ];
+  function handleScroll() {
+    window.scroll({
+      top: document.body.offsetHeight,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
 
   return (
     <div>
@@ -124,7 +136,9 @@ function Home() {
                 Taiwan, Australia, Italia dan tidak menutup kemungkinan adanya
                 pemasok dari negara negara lain nantinya
               </p>
-              <p className="cover-call">Hubungi Kami</p>
+              <p className="cover-call" onClick={() => handleScroll()}>
+                Hubungi Kami
+              </p>
             </Fade>
           </Grid>
           <Grid item md={2} sm={6} sx={12}>
@@ -188,15 +202,9 @@ function Home() {
 
       {/* product */}
       <p className="product">Produk Kami</p>
-      {/* <Slide direction="left"> */}
-
-      {/* {product.map((item, i) => ( */}
       <Fade left>
         <ItemProduct item={product[slideCount]} />
       </Fade>
-      {/* // ))} */}
-      {/*  */}
-      {/* </Slide> */}
       <center>
         {slideCount === 0 ? (
           <ArrowBackIosRoundedIcon
@@ -234,6 +242,7 @@ function Home() {
             index={0}
             navButtonsAlwaysInvisible={true}
             indicators={false}
+            interval={3000}
           >
             {client1.map((item) => (
               <ItemClient data={item} />
@@ -247,6 +256,7 @@ function Home() {
             index={1}
             navButtonsAlwaysInvisible={true}
             indicators={false}
+            interval={3500}
           >
             {client2.map((item) => (
               <ItemClient data={item} />
@@ -260,6 +270,8 @@ function Home() {
             index={2}
             navButtonsAlwaysInvisible={true}
             indicators={false}
+
+            interval={3700}
           >
             {client3.map((item) => (
               <ItemClient data={item} />
@@ -273,6 +285,16 @@ function Home() {
 }
 
 function ItemProduct(props) {
+  let history = useHistory();
+
+  const toProduct = (data) => {
+    console.log(data);
+    history.push({
+      pathname: "/product",
+      state: { brand: data },
+    });
+  };
+
   return (
     <Grid container justify="center" style={{ padding: 20 }}>
       <Grid item md={6} sm={12} xs={12} style={{ textAlign: "center" }}>
@@ -281,7 +303,12 @@ function ItemProduct(props) {
       <Grid item md={6} sm={12} xs={12}>
         <p className="product-title">{props.item.name}</p>
         <p className="product-desc">{props.item.desc}</p>
-        <p className="product-detail">Lihat Detail</p>
+        <p
+          className="product-detail"
+          onClick={() => toProduct(props.item.brand)}
+        >
+          Lihat Detail
+        </p>
       </Grid>
     </Grid>
   );

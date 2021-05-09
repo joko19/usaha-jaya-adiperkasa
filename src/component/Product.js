@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Grid, Paper } from "@material-ui/core";
@@ -76,8 +76,9 @@ import icDownload from "./../img/product/unduh.png";
 import active from "./../img/product/active.png";
 import inactive from "./../img/product/inactive.png";
 
-function Product() {
+function Product(props) {
   const [data, setData] = useState("Aulektro Deroflex");
+
   const kategori = [
     "Aulektro Deroflex",
     "Dormer",
@@ -91,6 +92,16 @@ function Product() {
     "Westlake",
     "Yamato"
   ];
+
+  useEffect(() => {
+    if (props.history.location.state) {
+      const brand = props.history.location.state.brand;
+      window.scrollTo(0, 0);
+      setData(brand);
+    } else {
+      setData("Aulektro Deroflex");
+    }
+  });
 
   const sekilas_product = [
     {

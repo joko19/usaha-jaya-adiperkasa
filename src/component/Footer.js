@@ -60,7 +60,7 @@ function Footer() {
   function mediaSocialList(){
     let list = [];
     imglogo.forEach(element =>{
-      list.push(<li class="list-inline-item" id="media_social_item" ><a target="_blank" href={element.link}><img src={element.icon} style={{width:60, height:60}}></img></a></li>)
+      list.push(<li class="list-inline-item" id="media_social_item" ><a target="_blank" href={element.link} rel="noreferrer"><img src={element.icon} style={{width:60, height:60}} alt="gambar footer"></img></a></li>)
     });
     return list;
   }
@@ -71,7 +71,7 @@ function Footer() {
     data_contact_us.forEach(element =>{
       
       list.push(<ul class="list-unstyled-inline" id={element.id}> <li class="list-inline-item">
-      <img src={element.img}  style={{width:32, height:32}}></img> 
+      <img src={element.img}  style={{width:32, height:32}} alt="gambar footer"/>
       </li>
       <li class="list-inline-item" id="data_contact_us">
       <p>{element.data}</p>
@@ -92,21 +92,21 @@ function Footer() {
     // }
     return list;
   }
-  function mobileVersion(){
-    if(isMobile){
-      return (<div class="w-100"></div>);
-    } else { 
-      return null;
-    }
+  // function mobileVersion(){
+  //   if(isMobile){
+  //     return (<div class="w-100"></div>);
+  //   } else { 
+  //     return null;
+  //   }
     
-  }
+  // }
 
   if(isMobile){
     return( <div style={{ backgroundColor: "#22284C", color: "white" }} >
       <div class="container">
     <div class="row align-items-center">
       <div class="col">
-      <img class="logo-uja-footer-mobile" src={logoujaputih1} width="104px" heigth="71px"></img>
+      <img class="logo-uja-footer-mobile" src={logoujaputih1} width="104px" heigth="71px" alt="gambar footer"/>
       <p className="nama-perusahaan-mobile">PT.Usaha Jaya Adiperkasa</p>
       </div>
       </div>
@@ -149,10 +149,10 @@ function Footer() {
             <p className="title-menu-footer">Lokasi Kami</p>
           </li>
           <ul class="list-unstyled-inline" id="contact-us-item">
-          <li class="list-inline-item"><img src="iconlocation.png"></img></li>
+          <li class="list-inline-item"><img src="iconlocation.png" alt="icon location"/></li>
           <li class="list-inline-item" id="data_contact_us"><p>Jl.Kedinding Indah No.3-5, Sby</p></li>
           </ul>
-          <li class="list-inline-item" ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d920.6013484287697!2d112.77586950700196!3d-7.227234008308983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9b2619aeb3f%3A0x240afc723e7c084c!2sJl.%20Kedinding%20Indah%20No.3-5%2C%20RT.003%2FRW.05%2C%20Tanah%20Kali%20Kedinding%2C%20Kec.%20Kenjeran%2C%20Kota%20SBY%2C%20Jawa%20Timur%2060129!5e0!3m2!1sen!2sid!4v1619936882241!5m2!1sen!2sid" width="300" height="200" style={{border:0}} allowfullscreen="" loading="lazy"></iframe></li>
+          <li class="list-inline-item" ><iframe title="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d920.6013484287697!2d112.77586950700196!3d-7.227234008308983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9b2619aeb3f%3A0x240afc723e7c084c!2sJl.%20Kedinding%20Indah%20No.3-5%2C%20RT.003%2FRW.05%2C%20Tanah%20Kali%20Kedinding%2C%20Kec.%20Kenjeran%2C%20Kota%20SBY%2C%20Jawa%20Timur%2060129!5e0!3m2!1sen!2sid!4v1619936882241!5m2!1sen!2sid" width="300" height="200" style={{border:0}} allowfullscreen="" loading="lazy"></iframe></li>
         </ul>
       </div>
       </div>
@@ -163,7 +163,7 @@ function Footer() {
     <div style={{ backgroundColor: "#22284C", color: "white" }} >
       <div class="row">
         <div class="col-md-auto">
-        <img class="logo-uja-footer" src={logoujaputih1} width="104px" heigth="71px"></img>
+        <img class="logo-uja-footer" src={logoujaputih1} width="104px" heigth="71px" alt="logo"/>
         <p className="nama-perusahaan">PT.Usaha Jaya Adiperkasa</p>
         </div>
       
@@ -203,10 +203,10 @@ function Footer() {
               <p className="title-menu-footer">Lokasi Kami</p>
             </li>
             <ul class="list-unstyled-inline" id="contact-us-item">
-            <li class="list-inline-item"><img src={iconlocation} style={{width:32, height:32}}></img></li>
+            <li class="list-inline-item"><img src={iconlocation} style={{width:32, height:32}} alt="icon location"/></li>
             <li class="list-inline-item" id="data_contact_us"><p>Jl.Kedinding Indah No.3-5, Sby</p></li>
             </ul>
-            <li class="list-inline-item" ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d920.6013484287697!2d112.77586950700196!3d-7.227234008308983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9b2619aeb3f%3A0x240afc723e7c084c!2sJl.%20Kedinding%20Indah%20No.3-5%2C%20RT.003%2FRW.05%2C%20Tanah%20Kali%20Kedinding%2C%20Kec.%20Kenjeran%2C%20Kota%20SBY%2C%20Jawa%20Timur%2060129!5e0!3m2!1sen!2sid!4v1619936882241!5m2!1sen!2sid" width="300" height="200" style={{border:0}} allowfullscreen="" loading="lazy"></iframe></li>
+            <li class="list-inline-item" ><iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d920.6013484287697!2d112.77586950700196!3d-7.227234008308983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9b2619aeb3f%3A0x240afc723e7c084c!2sJl.%20Kedinding%20Indah%20No.3-5%2C%20RT.003%2FRW.05%2C%20Tanah%20Kali%20Kedinding%2C%20Kec.%20Kenjeran%2C%20Kota%20SBY%2C%20Jawa%20Timur%2060129!5e0!3m2!1sen!2sid!4v1619936882241!5m2!1sen!2sid" width="300" height="200" style={{border:0}} allowfullscreen="" loading="lazy"></iframe></li>
           </ul>
         </div>
       </div>

@@ -37,6 +37,7 @@ function Dealers() {
       telp: "+62315328700",
       address:
         "Jl. Bubutan No.81, Bubutan, Kec. Bubutan, Kota SBY, Jawa Timur 60174",
+      maps: "https://goo.gl/maps/g97nypoWpXNou9AH8",
     },
     {
       logo: icEmpatJaya,
@@ -44,6 +45,7 @@ function Dealers() {
       telp: "+62313521388",
       address:
         "Jl. Dupak No.152 A, Gundih, Kec. Bubutan, Kota SBY, Jawa Timur 60172",
+      maps: "https://g.page/empat-jaya?share",
     },
     {
       logo: icBentang,
@@ -51,6 +53,7 @@ function Dealers() {
       telp: "+628113526178",
       address:
         "Jl. Margomulyo No.46, Greges, Asemrowo, Surabaya City, East Java 60183",
+      maps: "https://g.page/wireropebentangpersada?share",
     },
     {
       logo: icLajuJaya,
@@ -58,6 +61,7 @@ function Dealers() {
       telp: "+62315036015",
       address:
         "Jl. Kapas Krampung No.198-A, Ploso, Kec. Tambaksari, Kota SBY, Jawa Timur 60133",
+      maps: "https://goo.gl/maps/14N7SgekUcZWgEEv8",
     },
   ];
 
@@ -68,6 +72,7 @@ function Dealers() {
       telp: "+62271664997",
       address:
         "Jl. Suryopranoto No.14, Kepatihan Wetan, Kec. Jebres, Kota Surakarta, Jawa Tengah 57129",
+      maps: "https://goo.gl/maps/ZGP5Z9saNdRpJfBz8",
     },
     {
       logo: icMayar,
@@ -75,6 +80,7 @@ function Dealers() {
       telp: "+6281329869226",
       address:
         "Jl. Poncowinatan No.49, Gowongan, Kec. Jetis, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55233",
+      maps: "https://goo.gl/maps/X6R4psocV6xDHpp88",
     },
   ];
 
@@ -85,6 +91,7 @@ function Dealers() {
       telp: "-",
       address:
         "Jl. Pasar Baru, Kertak Baru Ilir, Kec. Banjarmasin Tengah, Banjarmasin, Kalimantan Selatan 70234",
+      maps: "https://goo.gl/maps/jot1FEnQXWgBmS1H7",
     },
     {
       logo: icTools,
@@ -92,6 +99,7 @@ function Dealers() {
       telp: "+625416294516",
       address:
         "Jl. Untung Suropati No.38, Karang Asam Ulu, Kec. Sungai Kunjang, Samarinda, Kalimantan Timur 75243",
+      maps: "https://goo.gl/maps/KpuK5uTY7ihEPeqh9",
     },
     {
       logo: icTokoMulya,
@@ -99,6 +107,7 @@ function Dealers() {
       telp: "+62541741192",
       address:
         "Jl. Gajah Mada No.35, Ps. Pagi, Kec. Samarinda Kota, Kota Samarinda, Kalimantan Timur 75111",
+      maps: "https://goo.gl/maps/7Kw86rVsSiP1XCJE6",
     },
   ];
 
@@ -109,6 +118,7 @@ function Dealers() {
       telp: "+624113616551",
       address:
         "Jl. Dr. Wahidin Sudiro Husodo No.109, Ende, Kec. Wajo, Kota Makassar, Sulawesi Selatan 90156",
+      maps: "https://goo.gl/maps/rWRsuoKx6EMvXA426",
     },
     {
       logo: icTunasBaja,
@@ -116,6 +126,7 @@ function Dealers() {
       telp: "+624113623695",
       address:
         "Jl. Muna No.12, Melayu, Kec. Wajo, Kota Makassar, Sulawesi Selatan 90171",
+      maps: "https://goo.gl/maps/1Qh94orthje3U9oN9",
     },
   ];
   const Bali = [
@@ -125,6 +136,7 @@ function Dealers() {
       telp: "+623619073369",
       address:
         "Jl. Gatot Subroto Barat No.305D, Pemecutan Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80111",
+      maps: "https://goo.gl/maps/X371TfsJkArs5Nmr8",
     },
     {
       logo: icYang,
@@ -132,16 +144,17 @@ function Dealers() {
       telp: "+623618495363",
       address:
         "Jl. Mahendradatta Selatan No.99, Padangsambian, Kec. Denpasar Bar., Kota Denpasar, Bali 80119",
+      maps: "https://goo.gl/maps/Xqek9immhP56qxsb9",
     },
   ];
 
-  const toLocation = (props) =>{
-    window.open('https://www.google.co.id/maps/search/'+ props)
-  }
+  const toLocation = (maps) => {
+    window.open(maps);
+  };
 
   return (
     <div>
-      <Header currentPage="Authorized Dealer"/>
+      <Header currentPage="Authorized Dealer" />
       <div className="cover">
         <h1 className="cover-title">Authorized Dealer</h1>
       </div>
@@ -174,8 +187,12 @@ function Dealers() {
                       <div className="item-address">{data.address}</div>
                     </div>
 
-                    <p className="item-location" onClick={() =>toLocation(data.address)}>
-                      Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
+                    <p
+                      className="item-location"
+                      onClick={() => toLocation(data.maps)}
+                    >
+                      Lihat Lokasi Dealer{" "}
+                      <img src={direction} alt="icon direction" />
                     </p>
                   </Paper>
                 </Grid>
@@ -211,8 +228,12 @@ function Dealers() {
                       <div className="item-address">{data.address}</div>
                     </div>
 
-                    <p className="item-location" onClick={() =>toLocation(data.address)}>
-                      Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
+                    <p
+                      className="item-location"
+                      onClick={() => toLocation(data.maps)}
+                    >
+                      Lihat Lokasi Dealer{" "}
+                      <img src={direction} alt="icon direction" />
                     </p>
                   </Paper>{" "}
                 </Grid>
@@ -248,9 +269,13 @@ function Dealers() {
                       <div className="item-address">{data.address}</div>
                     </div>
 
-                    <p className="item-location" onClick={() =>toLocation(data.address)}>
+                    <p
+                      className="item-location"
+                      onClick={() => toLocation(data.maps)}
+                    >
                       {" "}
-                      Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
+                      Lihat Lokasi Dealer{" "}
+                      <img src={direction} alt="icon direction" />
                     </p>
                   </Paper>
                 </Grid>
@@ -286,9 +311,13 @@ function Dealers() {
                       <div className="item-address">{data.address}</div>
                     </div>
 
-                    <p className="item-location" onClick={() =>toLocation(data.address)}>
+                    <p
+                      className="item-location"
+                      onClick={() => toLocation(data.maps)}
+                    >
                       {" "}
-                      Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
+                      Lihat Lokasi Dealer{" "}
+                      <img src={direction} alt="icon direction" />
                     </p>
                   </Paper>{" "}
                 </Grid>
@@ -324,9 +353,13 @@ function Dealers() {
                       <div className="item-address">{data.address}</div>
                     </div>
 
-                    <p className="item-location" onClick={() =>toLocation(data.address)}>
+                    <p
+                      className="item-location"
+                      onClick={() => toLocation(data.maps)}
+                    >
                       {" "}
-                      Lihat Lokasi Dealer <img src={direction} alt="icon direction"/>
+                      Lihat Lokasi Dealer{" "}
+                      <img src={direction} alt="icon direction" />
                     </p>
                   </Paper>{" "}
                 </Grid>

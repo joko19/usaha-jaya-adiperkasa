@@ -46,9 +46,11 @@
     padding: 20px;
     display: inline;
     border-radius: 40px;
-
 }
 
+.cover-call:hover{
+    cursor: pointer;
+}
 
 .vm-title {
     font-weight: bold;
@@ -124,6 +126,10 @@
     padding: 20px;
     display: inline;
     border-radius: 40px;
+}
+
+.product-detail:hover{
+    cursor: pointer;
 }
 
 .itc {

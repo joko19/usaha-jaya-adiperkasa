@@ -59,4 +59,14 @@
 
 .category-menu-side {
   padding-bottom: 20px;
+  display: inline;
+  margin-left: 15px;
+}
+
+.category-main{
+ margin: 15px; 
+}
+
+.category-main:hover{
+  cursor: pointer;
 }

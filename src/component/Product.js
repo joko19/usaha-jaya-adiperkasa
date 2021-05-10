@@ -88,7 +88,7 @@ function Product(props) {
     "Nishiki",
     "Roha",
     "Shuang Ge",
-    "T3A",
+    "TBA",
     "Westlake",
     "Yamato"
   ];
@@ -321,7 +321,7 @@ function Product(props) {
       type: ""
     },
     {
-      category: "T3A",
+      category: "TBA",
       img: t3a_1,
       nama: "Paking Mesin",
       type: ""
@@ -456,7 +456,7 @@ function Product(props) {
       photo : shuangge_pict_produk
     },
     {
-      category : "T3A",
+      category : "TBA",
       title : t3a_title,
       desc : "Paking Gasket TBA adalah sebuah bahan kertas yang terbuat dari kertas khusus gasket tipe cair (liquid Gasket), oksime silicone yang bermutu tinggi."+
       "Fungsi dari paking gasket TBA adalah untuk mengontrol kebocoran, bukan untuk mencegah seluruh kebocoran.",
@@ -516,7 +516,7 @@ function Product(props) {
                 {currentProduct.category === item ? (
                   <img src={active}  alt="active"/>
                 ) : (
-                  <img src={inactive} alt="inactive"/>
+                  <img src={inactive} onClick={() => clickProduct(item)} alt="inactive"/>
                 )}
                 <div
                   className="category-menu-side"

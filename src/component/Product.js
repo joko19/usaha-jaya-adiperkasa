@@ -401,6 +401,9 @@ function Product(props) {
         "dibuat dengan akurat dan diproduksi menjadi kualitas terbaik." +
         "Tersedia dalam berbagai ukuran dan konfigurasi.",
       photo: pict_product,
+      brosur: "https://drive.google.com/file/d/1BLJ1d8EDUyDAtjrJOO12cyfoeZQtxOZr/view?usp=sharing",
+      price:
+        "https://drive.google.com/file/d/1BLJ1d8EDUyDAtjrJOO12cyfoeZQtxOZr/view?usp=sharing",
     },
     {
       category: "Dormer",
@@ -409,6 +412,10 @@ function Product(props) {
         "Dormer Tools merupakan produsen dan pemasok untuk industri alat teknik rotari dunia yang berasal dari U.K dan mulai dikenal secara global pada tahun 1975." +
         "Dormer merupakan brand yang berspesialisasi pada mata bor yang dapat digunakan pada media baja, stainless steel, plastik, serta berbagai media yang berbeda lainnya.",
       photo: dormer_pict_produk,
+      brosur:
+        "https://drive.google.com/file/d/1UMorTmgLGc0BIqf9X4UfK-R1Cw-iaKRI/view?usp=sharing",
+      price:
+        "https://drive.google.com/file/d/1O1wz3McmblALwiu8cY7iucJM7SJDra7V/view?usp=sharing",
     },
     {
       category: "Klinger",
@@ -418,6 +425,10 @@ function Product(props) {
         "Klinger Group telah menjadi yang terdepan dalam industri penyegelan. Klinger berspesialisasi dengan produk - produknya kedirgantaraan peralatan - peralatan, serta industri kimia." +
         "Para konsumen yang mencakup perusahaan - perusahaan global berskala besar juga telah mempercayai dan mengakui keunggulan kualitas dan kinerja produk - produk Klinger.",
       photo: klinger_pict_produk,
+      brosur:
+        "https://drive.google.com/file/d/14LE3RreRQa8VC5-nkQTvl8G68VbQA0Qc/view?usp=sharing",
+      price:
+        "https://drive.google.com/file/d/16EPAeH9bdGY1GWaL7E0C8HTCsBnf4NNr/view?usp=sharing",
     },
     {
       category: "Langsol",
@@ -426,6 +437,10 @@ function Product(props) {
         "Sebagai produsen terkemuka yang berasal dari Jerman, dalam hal memoles. Langsol telah menjadi produk unggulan untuk pengerjaan permukaan dengan kualitas tinggi seperti logam, coats, dan plastik." +
         "Produk ini menyediakan berbagai macam produk yang digunakan untuk memoles berbagai jenis bahan industri. Mulai dari bahan stainless steel, aluminium, logam, logam non-ferrous, kayu clear coat hingga logam clear coat.",
       photo: langsol_pict_produk,
+      brosur:
+        "https://drive.google.com/file/d/1Xc8jWxJBUJSw53DysDDS0yk92jdXg2P1/view?usp=sharing",
+      price:
+        "https://drive.google.com/file/d/10JfmBw3RCsuIZFewraqOaknyp0scgaS0/view?usp=sharing",
     },
     {
       category: "Nippon Resibon",
@@ -434,6 +449,10 @@ function Product(props) {
         "Nippon Resibon merupakan produk dari Resibon Japan Co Ltd, yang secara global dikenal sebagai ahli dalam memproduksi batu gerinda di Osaka, jepang sejak 1958. Sejak didirikan, telah diluncurkan beraneka produk unggulan berdasarkan ide murni dan teknologi yang memberikan hasil sempurna dalam menggerinda, memotong, dan memoles semua jenis besi dan material." +
         "Diantaranya terdapat “The Super Series” yang secara signifiikan dapat meningkatkan performa dari alat abrasi dan gerinda pada umumnya, “Colored Grinding Wheel” yang merubah persepsi industri terhadap seluruh kategori produk, dan “Flexible Grinding Wheel” merupakan jenis yang pertama dalam industri ini. Nippon Ressibon adalah merek profesional, dan produk ini juga telah menjadi merek unggulan dalam menggerinda dan memotong selama bertahun - tahun. ",
       photo: nippon_pict_produk,
+      brosur:
+        "https://drive.google.com/file/d/1Ajz_i66TFdot6YMeOhxr5f5NQ4d_kbvi/view?usp=sharing",
+      price:
+        "https://drive.google.com/file/d/1I3qsmyoFN58X9TP3Ah7UyFR7uEtt8ud-/view?usp=sharing",
     },
     {
       category: "Nishiki",
@@ -442,6 +461,10 @@ function Product(props) {
         "Sikat kawat industri merupakan produk yang umum yang dapat ditemukan dan diproduksi di banyak negara. Yang membuat Nishiki King berbeda dari yang lain adalah produk ini menggunakan sistem cincin tetap, kawat lentur, dan metode pengolahan dalam memproduksi guna menghasilkan keseimbangan dalam berotasi selama beroperasi." +
         "Hal ini memastikan efisiensi kinerja yang terpercaya demi keselamatan penggunanya. Merek ini terus berinovasi dan memiliki berbagai macam sikat seperti power brushes, maintenance brushes, custom-designed conveyor cleaning brushes, dan strip brush seals.",
       photo: nishiki_pict_produk,
+      brosur:
+        "https://drive.google.com/file/d/1Ajz_i66TFdot6YMeOhxr5f5NQ4d_kbvi/view?usp=sharing",
+      price:
+        "https://drive.google.com/file/d/1Ew2Q3DnJMEkjhJTi2D3dlLMook9yVlUe/view?usp=sharing",
     },
     {
       category: "Roha",
@@ -450,6 +473,10 @@ function Product(props) {
         "Produk - produk ROHA mencakup peralatan dan perlengkapan las. Produk ROHA adalah produk berkualitas dengan harga yang sangat terjangkau." +
         "Jajaran produk ROHA terus diperbarui dengan quality control yang tinggi, agar kinerja dan kualitas produk tetap terjaga dan mampu memberikan hasil yang maksimal.",
       photo: roha_pict_produk,
+      brosur:
+        "https://drive.google.com/file/d/1EyvAmnSQ_DQ9L_rX2G2Hl_lr10gkvyzW/view?usp=sharing",
+      price:
+        "https://drive.google.com/file/d/1le6JLByWFADT60i9pDckLZisnxxH9e2d/view?usp=sharing",
     },
     {
       category: "Shuang Ge",
@@ -458,6 +485,10 @@ function Product(props) {
         "Produsen katrol rantai dan katrol tuas yang berasal dari Tiongkok ini telah berhasil mengekspor produk mereka ke lebih daro 60 negara di Eropa, Amerika, Timur Tengah, Australia, Asia Tenggara, Afrika." +
         "Produk ini telah mendapatkan reputasi yang baik dari klien mereka dan mematahkan persepsi mengenai produk buatan Tiongkok dengan secara terus menerus membuat produk berkualitas tinggi, aman, dan terpercaya serta pelayanan cepat dan efisien.",
       photo: shuangge_pict_produk,
+      brosur:
+        "https://drive.google.com/file/d/1Y6OVMV1JUX18ev58V464DC4L1N5vqeVY/view?usp=sharing",
+      price:
+        "https://drive.google.com/file/d/1bedYeR4inwYejo1rI_q_4MxFUqyD5RJu/view?usp=sharing",
     },
     {
       category: "T3A",
@@ -466,6 +497,9 @@ function Product(props) {
         "Paking Gasket TBA adalah sebuah bahan kertas yang terbuat dari kertas khusus gasket tipe cair (liquid Gasket), oksime silicone yang bermutu tinggi." +
         "Fungsi dari paking gasket TBA adalah untuk mengontrol kebocoran, bukan untuk mencegah seluruh kebocoran.",
       photo: t3a_pict_produk,
+      brosur: "https://drive.google.com/file/d/1BLJ1d8EDUyDAtjrJOO12cyfoeZQtxOZr/view?usp=sharing",
+      price:
+        "https://drive.google.com/file/d/1oSarYeTVkhysNaM3naroZU3Q-TJvR4mq/view?usp=sharing",
     },
     {
       category: "Westlake",
@@ -474,6 +508,10 @@ function Product(props) {
         "West Lake Drilling mesin Co, Ltd adalah produsen terbesar mesin bor, mesin milling & drilling, dan mesin trapping yang berasal dari Hangzhou, China yang berdiri sejak tahun 1956. Dengan merk “WEST LAKE”, ada berbagai jenis produk dengan kualitas tinggi dengan harga terjangkau. Kami memperoleh sertifikasi ISO 9002QA & ISO 9001:2000." +
         "West Lake merupakan merk yang memiliki kualitas mesin bor duduk yang baik. Sehingga mesin ini cocok untuk digunakan mulai dari hobi, hingga industri menengah ke atas.",
       photo: westlake_pict_produk,
+      brosur:
+        "https://drive.google.com/file/d/1kGtte3gsOd_83o-Ideo-oGmA1kPabdxZ/view?usp=sharing",
+      price:
+        "https://drive.google.com/file/d/1T6CTIblQeFRuzzBthLZtToN9zOBuwkEM/view?usp=sharing",
     },
     {
       category: "Yamato",
@@ -481,6 +519,10 @@ function Product(props) {
       desc:
         "Dengan pengalaman lebih dari 40 tahun, peralatan Yamato memiliki performa dan kinerja yang sangat baik. Motto produksi Yamato adalah “Selalu membuat produk = produk unggulan, dan perlengkapan yang mudah digunakan”. Yamato memiliki banyak sekali jajaran alat - alat potong dan las yang cocok untuk semua kebutuhan pengguna.”",
       photo: yamato_pict_produk,
+      brosur:
+        "https://drive.google.com/file/d/1RK2xpM-sTRWO5E2VIcMT2TZoSoGm4HsJ/view?usp=sharing",
+      price:
+        "https://drive.google.com/file/d/1gJ4M1M0_Nlac-0tKahlYK2KU7VnPkRnm/view?usp=sharing",
     },
   ];
 
@@ -504,6 +546,10 @@ function Product(props) {
     currentProduct = item[0];
     currentSekilas = itemsekilas;
   }
+
+  const toFile = (uri) => {
+    window.open(uri);
+  };
 
   setCurrentProduct();
   return (
@@ -556,10 +602,10 @@ function Product(props) {
                 alt="product-photos"
               />
               <p className="detail-info-title">DETAIL INFORMASI</p>
-              <p className="detail-info">
+              <p className="detail-info" onClick={() => toFile(currentProduct.brosur)}>
                 <img src={icDownload} alt="icon download" /> Produk
               </p>
-              <p className="detail-info">
+              <p className="detail-info" onClick={() => toFile(currentProduct.price)}>
                 <img src={icDownload} alt="icon download" /> Daftar Harga Produk
               </p>
             </Grid>

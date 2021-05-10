@@ -26,6 +26,10 @@
   font-weight: bold;
 }
 
+.detail-info:hover{
+  cursor: pointer;
+}
+
 .sp {
   text-align: center;
   margin-bottom: 35px;

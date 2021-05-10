@@ -146,7 +146,7 @@ function About() {
     {
       img: nico,
       name: "Nico Hermnsyah",
-      position: "",
+      position: "Support",
     },
     {
       img: suyadi,
@@ -155,8 +155,8 @@ function About() {
     },
     {
       img: suparian,
-      name: "PIC Warehouse",
-      position: "",
+      name: "Suparian",
+      position: "PIC Warehouse",
     },
     {
       img: imron,

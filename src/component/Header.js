@@ -19,7 +19,7 @@ const navbarmenu = [
     href: "/produk",
   },
   {
-    title: "Authorized Dealer",
+    title: "Dealer",
     href: "/dealer",
   },
   {

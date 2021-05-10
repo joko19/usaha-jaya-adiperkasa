@@ -297,7 +297,7 @@ function ItemProduct(props) {
   const toProduct = (data) => {
     console.log(data);
     history.push({
-      pathname: "/product",
+      pathname: "/produk",
       state: { brand: data },
     });
   };

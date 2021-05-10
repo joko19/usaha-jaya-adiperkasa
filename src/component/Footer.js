@@ -19,22 +19,22 @@ function Footer() {
     {
       classname: "sub-menu-top",
       menu : "Tentang Kami",
-      link : "/about"
+      link : "/tentang"
     },
     {
       classname : "sub-menu",
       menu : "Produk Kami",
-      link : "/product"
+      link : "/produk"
     },
     {
       classname : "sub-menu",
-      menu : "Authorized Dealers",
-      link : "/dealers"
+      menu : "Dealer",
+      link : "/dealer"
     },
     {
       classname:  "sub-menu",
       menu : "Berita",
-      link : "/news-and-event"
+      link : "/berita"
     },
     {
       classname : "sub-menu",

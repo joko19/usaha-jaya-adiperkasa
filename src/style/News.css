@@ -22,13 +22,21 @@
   font-weight: 600;
   font-size: 40px;
   line-height: 140%;
-  /* identical to box height, or 56px */
-
   letter-spacing: 0.005em;
 
-  /* Blue / 1 */
-
   color: #22284c;
+}
+.news-link {
+  text-decoration: none;
+}
+.news-link:hover {
+  text-decoration: underline;
+}
+.news-nolink {
+  text-decoration: none;
+}
+.news-nolink:hover {
+  text-decoration: none;
 }
 .news-date {
   font-family: Inter;

@@ -26,6 +26,16 @@ import icTools from "./../img/dealer/icTools.png";
 import icTunasBaja from "./../img/dealer/icTunasBaja.png";
 import icTunggal from "./../img/dealer/icTunggal.png";
 import icYang from "./../img/dealer/icYang.png";
+import icCipta from "./../img/dealer/icCipta.png";
+import icGlobal from "./../img/dealer/icGlobal.png";
+import icYunika from "./../img/dealer/icYunika.png";
+import icAgung from "./../img/dealer/icAgung.png";
+import icNaga from "./../img/dealer/icNaga.png";
+import icSari from "./../img/dealer/icSari.png";
+import icDinamika from "./../img/dealer/icDinamika.png";
+import icCentralindo from "./../img/dealer/icCentralindo.png";
+import icSumber from "./../img/dealer/icSumber.png";
+import icRaya from "./../img/dealer/icRaya.png";
 
 function Dealers() {
   const classes = useStyles();
@@ -62,6 +72,78 @@ function Dealers() {
       address:
         "Jl. Kapas Krampung No.198-A, Ploso, Kec. Tambaksari, Kota SBY, Jawa Timur 60133",
       maps: "https://goo.gl/maps/14N7SgekUcZWgEEv8",
+    },
+    {
+      logo: icCipta,
+      name: "CV. Cipta Sejahtera Teknik",
+      telp: "-",
+      address:
+        "Jl. Raya Jemursari No.9, Jemur Wonosari, Kec. Wonocolo, Kota SBY, Jawa Timur 60237",
+      maps: "https://goo.gl/maps/tB6Fe2ZhPbTTTFhx5",
+    },
+    {
+      logo: icGlobal,
+      name: "Global Spex Mandiri",
+      telp: "+62315347113",
+      address:
+        "Jl. Kranggan No.102 - 6, Bubutan, Kec. Bubutan, Kota SBY, Jawa Timur 60251",
+      maps: "https://goo.gl/maps/QCGY2R1aacBUt7wd6",
+    },
+    {
+      logo: icYunika,
+      name: "Yunika Tool Store",
+      telp: "+62315353828",
+      address:
+        "Jl. Bubutan No.142, Alun-alun Contong, Kec. Bubutan, Kota SBY, Jawa Timur 60174",
+      maps: "https://goo.gl/maps/ZhiR652DZJ1nccQp8",
+    },
+    {
+      logo: icAgung,
+      name: "PT. Agung Nagasaki Teknik",
+      telp: "+62315350044",
+      address:
+        "Jl. Pengenal Blok No.1, Bubutan, Kec. Bubutan, Kota SBY, Jawa Timur 60174",
+      maps: "https://goo.gl/maps/Tf2eTfN5vvmiJbda6",
+    },
+    {
+      logo: icNaga,
+      name: "Naga Tech",
+      telp: "-",
+      address:
+        "Jl. Kalimati Wetan No.22, Nyamplungan, Kec. Pabean Cantian, Kota SBY, Jawa Timur 60162",
+      maps: "https://goo.gl/maps/Ay1xhJ8Zq3Wg2o1j8",
+    },
+    {
+      logo: icSari,
+      name: "PT. Sari Pratama Tools",
+      telp: "-",
+      address:
+        "Jl. Pengenal Blok No.1, Bubutan, Kec. Bubutan, Kota SBY, Jawa Timur 60174",
+      maps: "https://goo.gl/maps/rb1oeitMV9sjed4D9",
+    },
+    {
+      logo: icDinamika,
+      name: "Dinamika",
+      telp: "+62341327312",
+      address:
+        "Ruko Petra, Jl. Prof. Moch Yamin No.26, Sukoharjo, Kec. Klojen, Kota Malang, Jawa Timur 65118",
+      maps: "https://goo.gl/maps/eeWmmAtxmzWKmecUA",
+    },
+    {
+      logo: icCentralindo,
+      name: "PT. Centralindo Abadi Teknik",
+      telp: "+6282232718284",
+      address:
+        "Ngagel Jaya Selatan Ruko RMI Blok H 12, Baratajaya, Kec. Gubeng, Kota SBY, Jawa Timur 60284",
+      maps: "https://goo.gl/maps/Vju1D7jao2yNxvJ16",
+    },
+    {
+      logo: icSumber,
+      name: "CV. Sumber Abadi",
+      telp: "+62341327312",
+      address:
+        "Jalan raya, Ruko A-6, Dusun Larangan, Kec. Driyorejo, Kab. Gresik, Jawa Timur 61177",
+      maps: "https://goo.gl/maps/ao71dPj3wS7drKAd7",
     },
   ];
 
@@ -107,6 +189,14 @@ function Dealers() {
       telp: "+62541741192",
       address:
         "Jl. Gajah Mada No.35, Ps. Pagi, Kec. Samarinda Kota, Kota Samarinda, Kalimantan Timur 75111",
+      maps: "https://goo.gl/maps/7Kw86rVsSiP1XCJE6",
+    },
+    {
+      logo: icRaya,
+      name: "Toko Mulia Raya",
+      telp: "+62541749225",
+      address:
+        "Jl. Gajah Mada No.5, Ps. Pagi, Kec. Samarinda Kota, Kota Samarinda, Kalimantan Timur 75111",
       maps: "https://goo.gl/maps/7Kw86rVsSiP1XCJE6",
     },
   ];
@@ -171,7 +261,7 @@ function Dealers() {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Grid container justify="center">
+            <Grid container>
               {Jatim.map((data) => (
                 <Grid item md={6} sm={6} xs={12}>
                   <Paper className={classes.paperItem}>

@@ -101,7 +101,7 @@ function Product(props) {
     } else {
       setData("Aulektro Deroflex");
     }
-  });
+  }, []);
 
   const sekilas_product = [
     {
@@ -514,9 +514,9 @@ function Product(props) {
             {kategori.map((item) => (
               <div className="category-main">
                 {currentProduct.category === item ? (
-                  <img src={active} />
+                  <img src={active}  alt="active"/>
                 ) : (
-                  <img src={inactive} />
+                  <img src={inactive} alt="inactive"/>
                 )}
                 <div
                   className="category-menu-side"
@@ -532,17 +532,17 @@ function Product(props) {
         <Grid item md={8} sm={12} xs={12}>
           <Grid container>
             <Grid item md={6} sm={12} xs={12} style={{ padding: 25 }}>
-              <img src={currentProduct.title} />
+              <img src={currentProduct.title} alt="title product"/>
               <p className="product-content">{currentProduct.desc}</p>
             </Grid>
             <Grid item md={5} sm={12} xs={12}>
-              <img src={currentProduct.photo} className="product-photo" />
+              <img src={currentProduct.photo} className="product-photo" alt="product-photos" />
               <p className="detail-info-title">DETAIL INFORMASI</p>
               <p className="detail-info">
-                <img src={icDownload} /> Produk
+                <img src={icDownload} alt="icon download" /> Produk
               </p>
               <p className="detail-info">
-                <img src={icDownload} /> Daftar Harga Produk
+                <img src={icDownload} alt="icon download" /> Daftar Harga Produk
               </p>
             </Grid>
           </Grid>
@@ -552,7 +552,7 @@ function Product(props) {
       <div className="sp">
         <h3 className="sp-title">SEKILAS PRODUK</h3>
         {currentSekilas.map((item) => (
-          <Item_sekilas_product data={item} />
+          <ItemSekilasProduct data={item} />
         ))}
         {/* {sekilas.sekilasproduk.map((item) =>(
           <Item_sekilas_product data={item}/>
@@ -568,10 +568,10 @@ function Product(props) {
 
 export default Product;
 
-function Item_sekilas_product(props) {
+function ItemSekilasProduct(props) {
   return (
     <div className="sp-item">
-      <img src={props.data.img} />
+      <img src={props.data.img} alt="product"/>
       <p className="sp-name">{props.data.nama}</p>
       <p className="sp-type">{props.data.type}</p>
     </div>

@@ -13,7 +13,7 @@ import batuPoles from "./../img/batu_poles.png";
 import borDuduk from "./../img/bor_duduk.png";
 import pakingMesin from "./../img/paking_mesin.png";
 import pakingMesinSquare from "./../img/paking_mesin_square.png";
-import kawatLasSquare from "./../img/kawat_las_square.png";
+// import kawatLasSquare from "./../img/kawat_las_square.png";
 import kabelLas from './../img/kabel_las 1.png'
 import BatuPolesSquare from "./../img/batu_poles_square.png";
 import Carousel from "react-material-ui-carousel";

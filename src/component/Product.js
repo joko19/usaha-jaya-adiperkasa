@@ -101,7 +101,7 @@ function Product(props) {
     } else {
       setData("Aulektro Deroflex");
     }
-  });
+  }, []);
 
   const sekilas_product = [
     {

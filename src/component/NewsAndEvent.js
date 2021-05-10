@@ -7,6 +7,8 @@ import { Grid } from "@material-ui/core";
 import news1 from "./../img/news/News1.png";
 import news2 from "./../img/news/News2.png";
 import news3 from "./../img/news/News3.png";
+import MetaTags from "react-meta-tags";
+
 function NewsAndEvent() {
   const news = [
     {
@@ -60,6 +62,14 @@ function NewsAndEvent() {
   // };
   return (
     <div>
+
+<MetaTags>
+        <title>Berita | PT. Usaha Jaya Adi Perkasa</title>
+        <meta
+          name="description"
+          content="Perusahaan Import dan Distributor di Bidang Industri Manufaktur"
+        />
+      </MetaTags>
       <Header currentPage="Berita" />
       <div className="cover">
         <h1 className="cover-title">News & Event</h1>

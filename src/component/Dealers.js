@@ -36,6 +36,7 @@ import icDinamika from "./../img/dealer/icDinamika.png";
 import icCentralindo from "./../img/dealer/icCentralindo.png";
 import icSumber from "./../img/dealer/icSumber.png";
 import icRaya from "./../img/dealer/icRaya.png";
+import MetaTags from "react-meta-tags";
 
 function Dealers() {
   const classes = useStyles();
@@ -244,6 +245,13 @@ function Dealers() {
 
   return (
     <div>
+    <MetaTags>
+      <title>Dealer | PT. Usaha Jaya Adi Perkasa</title>
+      <meta
+        name="description"
+        content="Perusahaan Import dan Distributor di Bidang Industri Manufaktur"
+      />
+    </MetaTags>
       <Header currentPage="Authorized Dealer" />
       <div className="cover">
         <h1 className="cover-title">Authorized Dealer</h1>

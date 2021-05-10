@@ -43,6 +43,7 @@ import michael from "./../img/photo/michael.png";
 import ali from "./../img/photo/ali.png";
 import santoso from "./../img/photo/santoso.png";
 import ismuntoro from "./../img/photo/ismuntoro.png";
+import MetaTags from "react-meta-tags";
 
 function About() {
   const classes = useStyles();
@@ -216,6 +217,13 @@ function About() {
   ];
   return (
     <div>
+      <MetaTags>
+        <title>Tentang | PT. Usaha Jaya Adi Perkasa</title>
+        <meta
+          name="description"
+          content="Perusahaan Import dan Distributor di Bidang Industri Manufaktur"
+        />
+      </MetaTags>
       <Header currentPage="Tentang Kami" />
       <div className="cover">
         <h1 className="cover-title">Tentang Kami</h1>
@@ -309,7 +317,7 @@ function About() {
           return <Photo item={item} />;
         })}
       </center>
-      <br/>
+      <br />
       <Footer />
     </div>
   );

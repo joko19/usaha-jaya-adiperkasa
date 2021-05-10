@@ -9,6 +9,7 @@ import iconinstagram from "./../img/icon/iconinstagram.png"
 import iconfb from "./../img/icon/iconfb.png"
 import iconyoutube from "./../img/icon/iconyoutube.png"
 import logoujaputih1 from "./../img/icon/logo_uja putih 1.png"
+
 function Footer() {
 
   const imglogo = [{ icon : iconinstagram, link :"https://www.instagram.com/usahajaya.adiperkasa/"}, { icon : iconfb, link :"https://www.facebook.com/ujadiperkasa"}, {icon : iconyoutube, link:"https://www.youtube.com/channel/UCsy4EqK1eA1DIiB9zGVoWnA"}];

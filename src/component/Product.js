@@ -75,6 +75,7 @@ import "./../style/Product.css";
 import icDownload from "./../img/product/unduh.png";
 import active from "./../img/product/active.png";
 import inactive from "./../img/product/inactive.png";
+import MetaTags from "react-meta-tags";
 
 function Product(props) {
   const [data, setData] = useState("Aulektro Deroflex");
@@ -90,7 +91,7 @@ function Product(props) {
     "Shuang Ge",
     "T3A",
     "Westlake",
-    "Yamato"
+    "Yamato",
   ];
 
   useEffect(() => {
@@ -318,73 +319,73 @@ function Product(props) {
       category: "Shuang Ge",
       img: shuangge_5,
       nama: "GCT - AK Series Plain Trolley",
-      type: ""
+      type: "",
     },
     {
       category: "T3A",
       img: t3a_1,
       nama: "Paking Mesin",
-      type: ""
+      type: "",
     },
     {
       category: "Westlake",
       img: westlake_1,
       nama: "Light Type Bench Drilling Machine",
-      type: "ZHX-13/I"
+      type: "ZHX-13/I",
     },
     {
       category: "Westlake",
       img: westlake_2,
       nama: "Light Type Bench Drilling Machine",
-      type: "ZQD4125/ZQD4132"
+      type: "ZQD4125/ZQD4132",
     },
     {
       category: "Westlake",
       img: westlake_3,
       nama: "Industrial Type Bench Drilling Machine",
-      type: "Z516"
+      type: "Z516",
     },
     {
       category: "Westlake",
       img: westlake_4,
       nama: "Radial Drilling Machine",
-      type: "Z3025x7/Z3032x7"
+      type: "Z3025x7/Z3032x7",
     },
     {
       category: "Westlake",
       img: westlake_5,
       nama: "High-Speed Accuracy Drilling Machine",
-      type: "ZWG-4(A)"
+      type: "ZWG-4(A)",
     },
     {
       category: "Yamato",
       img: yamato_1,
       nama: "Regulator For Oxygen",
-      type: ""
+      type: "",
     },
     {
       category: "Yamato",
       img: yamato_2,
       nama: "Regulator For C02 + With Heater",
-      type: ""
+      type: "",
     },
     {
       category: "Yamato",
       img: yamato_3,
       nama: "Regulator For Nitrogen High Pressure",
-      type: ""
+      type: "",
     },
     {
       category: "Yamato",
       img: yamato_4,
       nama: "Large Cutting Tip (A)",
-      type: ""
+      type: "",
     },
     {
       category: "Yamato",
       img: yamato_5,
       nama: "Cutting Torch Medium Type 201",
-      type: ""
+      type: "",
     },
   ];
 
@@ -435,46 +436,52 @@ function Product(props) {
       photo: nippon_pict_produk,
     },
     {
-      category : "Nishiki",
-      title : nishiki_title,
-      desc : "Sikat kawat industri merupakan produk yang umum yang dapat ditemukan dan diproduksi di banyak negara. Yang membuat Nishiki King berbeda dari yang lain adalah produk ini menggunakan sistem cincin tetap, kawat lentur, dan metode pengolahan dalam memproduksi guna menghasilkan keseimbangan dalam berotasi selama beroperasi."+
-      "Hal ini memastikan efisiensi kinerja yang terpercaya demi keselamatan penggunanya. Merek ini terus berinovasi dan memiliki berbagai macam sikat seperti power brushes, maintenance brushes, custom-designed conveyor cleaning brushes, dan strip brush seals.",
-      photo : nishiki_pict_produk
+      category: "Nishiki",
+      title: nishiki_title,
+      desc:
+        "Sikat kawat industri merupakan produk yang umum yang dapat ditemukan dan diproduksi di banyak negara. Yang membuat Nishiki King berbeda dari yang lain adalah produk ini menggunakan sistem cincin tetap, kawat lentur, dan metode pengolahan dalam memproduksi guna menghasilkan keseimbangan dalam berotasi selama beroperasi." +
+        "Hal ini memastikan efisiensi kinerja yang terpercaya demi keselamatan penggunanya. Merek ini terus berinovasi dan memiliki berbagai macam sikat seperti power brushes, maintenance brushes, custom-designed conveyor cleaning brushes, dan strip brush seals.",
+      photo: nishiki_pict_produk,
     },
     {
-      category : "Roha",
-      title : roha_title,
-      desc : "Produk - produk ROHA mencakup peralatan dan perlengkapan las. Produk ROHA adalah produk berkualitas dengan harga yang sangat terjangkau."+
-      "Jajaran produk ROHA terus diperbarui dengan quality control yang tinggi, agar kinerja dan kualitas produk tetap terjaga dan mampu memberikan hasil yang maksimal.",
-      photo : roha_pict_produk
+      category: "Roha",
+      title: roha_title,
+      desc:
+        "Produk - produk ROHA mencakup peralatan dan perlengkapan las. Produk ROHA adalah produk berkualitas dengan harga yang sangat terjangkau." +
+        "Jajaran produk ROHA terus diperbarui dengan quality control yang tinggi, agar kinerja dan kualitas produk tetap terjaga dan mampu memberikan hasil yang maksimal.",
+      photo: roha_pict_produk,
     },
     {
-      category : "Shuang Ge",
-      title : shuangge_title,
-      desc : "Produsen katrol rantai dan katrol tuas yang berasal dari Tiongkok ini telah berhasil mengekspor produk mereka ke lebih daro 60 negara di Eropa, Amerika, Timur Tengah, Australia, Asia Tenggara, Afrika."+
-      "Produk ini telah mendapatkan reputasi yang baik dari klien mereka dan mematahkan persepsi mengenai produk buatan Tiongkok dengan secara terus menerus membuat produk berkualitas tinggi, aman, dan terpercaya serta pelayanan cepat dan efisien.",
-      photo : shuangge_pict_produk
+      category: "Shuang Ge",
+      title: shuangge_title,
+      desc:
+        "Produsen katrol rantai dan katrol tuas yang berasal dari Tiongkok ini telah berhasil mengekspor produk mereka ke lebih daro 60 negara di Eropa, Amerika, Timur Tengah, Australia, Asia Tenggara, Afrika." +
+        "Produk ini telah mendapatkan reputasi yang baik dari klien mereka dan mematahkan persepsi mengenai produk buatan Tiongkok dengan secara terus menerus membuat produk berkualitas tinggi, aman, dan terpercaya serta pelayanan cepat dan efisien.",
+      photo: shuangge_pict_produk,
     },
     {
-      category : "T3A",
-      title : t3a_title,
-      desc : "Paking Gasket TBA adalah sebuah bahan kertas yang terbuat dari kertas khusus gasket tipe cair (liquid Gasket), oksime silicone yang bermutu tinggi."+
-      "Fungsi dari paking gasket TBA adalah untuk mengontrol kebocoran, bukan untuk mencegah seluruh kebocoran.",
-      photo : t3a_pict_produk
+      category: "T3A",
+      title: t3a_title,
+      desc:
+        "Paking Gasket TBA adalah sebuah bahan kertas yang terbuat dari kertas khusus gasket tipe cair (liquid Gasket), oksime silicone yang bermutu tinggi." +
+        "Fungsi dari paking gasket TBA adalah untuk mengontrol kebocoran, bukan untuk mencegah seluruh kebocoran.",
+      photo: t3a_pict_produk,
     },
     {
-      category : "Westlake",
-      title : westlake_title,
-      desc : "West Lake Drilling mesin Co, Ltd adalah produsen terbesar mesin bor, mesin milling & drilling, dan mesin trapping yang berasal dari Hangzhou, China yang berdiri sejak tahun 1956. Dengan merk “WEST LAKE”, ada berbagai jenis produk dengan kualitas tinggi dengan harga terjangkau. Kami memperoleh sertifikasi ISO 9002QA & ISO 9001:2000."+
-      "West Lake merupakan merk yang memiliki kualitas mesin bor duduk yang baik. Sehingga mesin ini cocok untuk digunakan mulai dari hobi, hingga industri menengah ke atas.",
-      photo : westlake_pict_produk
+      category: "Westlake",
+      title: westlake_title,
+      desc:
+        "West Lake Drilling mesin Co, Ltd adalah produsen terbesar mesin bor, mesin milling & drilling, dan mesin trapping yang berasal dari Hangzhou, China yang berdiri sejak tahun 1956. Dengan merk “WEST LAKE”, ada berbagai jenis produk dengan kualitas tinggi dengan harga terjangkau. Kami memperoleh sertifikasi ISO 9002QA & ISO 9001:2000." +
+        "West Lake merupakan merk yang memiliki kualitas mesin bor duduk yang baik. Sehingga mesin ini cocok untuk digunakan mulai dari hobi, hingga industri menengah ke atas.",
+      photo: westlake_pict_produk,
     },
     {
-      category : "Yamato",
-      title : yamato_title,
-      desc : "Dengan pengalaman lebih dari 40 tahun, peralatan Yamato memiliki performa dan kinerja yang sangat baik. Motto produksi Yamato adalah “Selalu membuat produk = produk unggulan, dan perlengkapan yang mudah digunakan”. Yamato memiliki banyak sekali jajaran alat - alat potong dan las yang cocok untuk semua kebutuhan pengguna.”",
-      photo : yamato_pict_produk
-    }
+      category: "Yamato",
+      title: yamato_title,
+      desc:
+        "Dengan pengalaman lebih dari 40 tahun, peralatan Yamato memiliki performa dan kinerja yang sangat baik. Motto produksi Yamato adalah “Selalu membuat produk = produk unggulan, dan perlengkapan yang mudah digunakan”. Yamato memiliki banyak sekali jajaran alat - alat potong dan las yang cocok untuk semua kebutuhan pengguna.”",
+      photo: yamato_pict_produk,
+    },
   ];
 
   let currentProduct = [];
@@ -501,6 +508,13 @@ function Product(props) {
   setCurrentProduct();
   return (
     <div>
+      <MetaTags>
+        <title>Produk | PT. Usaha Jaya Adi Perkasa</title>
+        <meta
+          name="description"
+          content="Perusahaan Import dan Distributor di Bidang Industri Manufaktur"
+        />
+      </MetaTags>
       <Header currentPage="Produk Kami" />
 
       <div className="cover">
@@ -514,9 +528,9 @@ function Product(props) {
             {kategori.map((item) => (
               <div className="category-main">
                 {currentProduct.category === item ? (
-                  <img src={active}  alt="active"/>
+                  <img src={active} alt="active" />
                 ) : (
-                  <img src={inactive} alt="inactive"/>
+                  <img src={inactive} alt="inactive" />
                 )}
                 <div
                   className="category-menu-side"
@@ -532,11 +546,15 @@ function Product(props) {
         <Grid item md={8} sm={12} xs={12}>
           <Grid container>
             <Grid item md={6} sm={12} xs={12} style={{ padding: 25 }}>
-              <img src={currentProduct.title} alt="title product"/>
+              <img src={currentProduct.title} alt="title product" />
               <p className="product-content">{currentProduct.desc}</p>
             </Grid>
             <Grid item md={5} sm={12} xs={12}>
-              <img src={currentProduct.photo} className="product-photo" alt="product-photos" />
+              <img
+                src={currentProduct.photo}
+                className="product-photo"
+                alt="product-photos"
+              />
               <p className="detail-info-title">DETAIL INFORMASI</p>
               <p className="detail-info">
                 <img src={icDownload} alt="icon download" /> Produk
@@ -571,7 +589,7 @@ export default Product;
 function ItemSekilasProduct(props) {
   return (
     <div className="sp-item">
-      <img src={props.data.img} alt="product"/>
+      <img src={props.data.img} alt="product" />
       <p className="sp-name">{props.data.nama}</p>
       <p className="sp-type">{props.data.type}</p>
     </div>

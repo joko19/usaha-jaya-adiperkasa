@@ -11,10 +11,10 @@ function RouteProcess() {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route exact path="/product" component={Product} />
-      <Route exact path="/dealers" component={Dealers} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/news-and-event" component={NewsAndEvent} />
+      <Route exact path="/produk" component={Product} />
+      <Route exact path="/dealer" component={Dealers} />
+      <Route exact path="/tentang" component={About} />
+      <Route exact path="/berita" component={NewsAndEvent} />
       <Route exact path="/blog" component={Blog} />
     </Switch>
   );

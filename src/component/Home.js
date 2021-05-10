@@ -14,7 +14,7 @@ import borDuduk from "./../img/bor_duduk.png";
 import pakingMesin from "./../img/paking_mesin.png";
 import pakingMesinSquare from "./../img/paking_mesin_square.png";
 // import kawatLasSquare from "./../img/kawat_las_square.png";
-import kabelLas from './../img/kabel_las 1.png'
+import kabelLas from "./../img/kabel_las 1.png";
 import BatuPolesSquare from "./../img/batu_poles_square.png";
 import Carousel from "react-material-ui-carousel";
 import icEmpat from "./../img/icEmpat.png";
@@ -24,6 +24,7 @@ import icManyar from "./../img/icManyar.png";
 import icAgung from "./../img/icAgung.png";
 import icSurya from "./../img/icSurya.png";
 import { useHistory } from "react-router-dom";
+import MetaTags from "react-meta-tags";
 
 function Home() {
   const [slideCount, setSlideCount] = useState(0);
@@ -42,7 +43,7 @@ function Home() {
       desc:
         "Dengan barisan lengkap produk kabel las yang tahan lama dan dapat diandalkan, kami menyediakan produk yang cocok dihampir seluruh pengguna dan tingkat tekanan. Berbagai pilihan melengkapi dengan fitting yang sama macamnya dan kuat, yang dibuat dengan akurat dan diproduksi menjadi kualitas terbaik. Tersedia dalam berbagai ukuran dan konfigurasi.",
       img: kabelLas,
-      brand:'Aulektro Deroflex'
+      brand: "Aulektro Deroflex",
     },
     {
       name: "Batu Poles",
@@ -118,6 +119,13 @@ function Home() {
 
   return (
     <div>
+      <MetaTags>
+        <title>Beranda | PT. Usaha Jaya Adi Perkasa</title>
+        <meta
+          name="description"
+          content="Perusahaan Import dan Distributor di Bidang Industri Manufaktur"
+        />
+      </MetaTags>
       <Header currentPage="Home" />
       <div className="cover">
         <Grid container justify="center">
@@ -242,7 +250,7 @@ function Home() {
             index={0}
             navButtonsAlwaysInvisible={true}
             indicators={false}
-            interval={3000}
+            interval={5000}
           >
             {client1.map((item) => (
               <ItemClient data={item} />
@@ -256,7 +264,7 @@ function Home() {
             index={1}
             navButtonsAlwaysInvisible={true}
             indicators={false}
-            interval={3500}
+            interval={5500}
           >
             {client2.map((item) => (
               <ItemClient data={item} />
@@ -270,8 +278,7 @@ function Home() {
             index={2}
             navButtonsAlwaysInvisible={true}
             indicators={false}
-
-            interval={3700}
+            interval={6000}
           >
             {client3.map((item) => (
               <ItemClient data={item} />

@@ -12,19 +12,19 @@ const navbarmenu = [
   },
   {
     title: "Tentang Kami",
-    href: "/about",
+    href: "/tentang",
   },
   {
     title: "Produk Kami",
-    href: "/product",
+    href: "/produk",
   },
   {
     title: "Authorized Dealer",
-    href: "/dealers",
+    href: "/dealer",
   },
   {
     title: "Berita",
-    href: "/news-and-event",
+    href: "/berita",
   },
   {
     title: "Blog",

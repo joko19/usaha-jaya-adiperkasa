@@ -7,6 +7,7 @@ import blog1 from "./../img/blog/blog1.jpg";
 import blog2 from "./../img/blog/blog2.jpg";
 import blog3 from "./../img/blog/blog3.jpg";
 import { isMobile } from "react-device-detect";
+import MetaTags from "react-meta-tags";
 
 function Blog() {
   const blogItem = [
@@ -99,6 +100,13 @@ function Blog() {
 
   return (
     <div>
+    <MetaTags>
+      <title>Blog | PT. Usaha Jaya Adi Perkasa</title>
+      <meta
+        name="description"
+        content="Perusahaan Import dan Distributor di Bidang Industri Manufaktur"
+      />
+    </MetaTags>
       <Header currentPage="Blog" />
       <div className="cover">
         <h1 className="cover-title">Blog</h1>

@@ -88,7 +88,7 @@ function ItemNews(props) {
         <img src={props.data.img} style={{ width: 500, height: 506 }} alt="gambar"/>
       </Grid>
       <Grid item md={6} sm={12} xs={12} style={{ paddingLeft: 40 }}>
-        <p class="news-title">{props.data.title}</p>
+       <a href={props.data.link} style={{textDecoration: 'none'}} target="_blank"> <p class="news-title">{props.data.title}</p></a>
         <p class="date-news">{props.data.date}</p>
         <div
           class="news-content"
